@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="src/scriptjs/index.js"></script>
+    <script src="src/scriptjs/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/indexpc.css">
+    <link rel="stylesheet" href="/css/indextel.css">
+    <link rel="stylesheet" href="/css/indextab.css">
+    <link rel="icon" href="/images/wowv2.png">
+    <title>AdminPage - Epid Cavalry</title>
+</head>
+<body>
+    <%- include('header_admin.ejs') %>
+
+    <div class="page">
+        <div class="user-detail">
+            <h2>Create an enterprise</h2>
+            <form action="/create_ad" method="POST">
+                <label>Title</label>
+                <input type="text" placeholder="Enter Ad name" name="title" required>
+                <label>Short description</label>
+                <input type="text" placeholder="Enter a short description" name="short_description" required>
+                <label>Full description</label>
+                <input type="text" placeholder="Enter a full description" name="full_description" required>
+                <label>Wage</label>
+                <input type="text" placeholder="Enter the wage" name="wages" required>
+                <label>Place</label>
+                <input type="text" placeholder="Enter the place" name="place" required>
+                <label>Working time</label>
+                <input type="text" placeholder="Enter the working time" name="working_time" required>
+                <label>Type</label>
+                <input type="text" placeholder="Enter the type" name="type" required>
+                <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>  
+    </div>
+
+    <%- include('footer.ejs') %>
+</body>
+</html>

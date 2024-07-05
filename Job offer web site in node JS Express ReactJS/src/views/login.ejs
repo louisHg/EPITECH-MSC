@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/login.css">
+        <title>Connection</title>
+        <link rel="icon" href="/images/wowv2.png">
+    </head>
+    <body>
+        <div class="hidden">
+        <% if(errors != "") { %>
+            <% errors.forEach((item) => { %>
+                <div class="success">
+                    <%- item %>
+                </div>
+            <% }); %>
+        <% } %>
+        </div>
+        <div class="login">
+            <h1>Log in</h1>
+            <form method="post" action="/login" >
+            <p><input type="text" name="email" value="" id="email" placeholder="Email"></p>
+            <p><input type="password" name="password" id ="password" value="" placeholder="Password"></p>
+            <p class="submit"><input type="submit" name="login" value="Connection"></p>
+            <br>
+            <a href="/register">Not registered yet ? Join us</a>
+            </form>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="src/scriptjs/index.js"></script>
+    <script src="src/scriptjs/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/indexpc.css">
+    <link rel="stylesheet" href="/css/indextel.css">
+    <link rel="stylesheet" href="/css/indextab.css">
+    <link rel="icon" href="/images/wowv2.png">
+    <title>AdminPage - Epid Cavalry</title>
+</head>
+<body>
+    <%- include('header_admin.ejs') %>
+    <!--====form section start====-->
+    <div>
+        <form action="/UPDATE_USER" method="POST" class="bording_tableau">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter Full Name" name="fullname" required value="<%= editData.fullname%>">
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter Email Address" name="email" required value="<%= editData.email%>">
+                <label>Password</label>
+                <input type="text" placeholder="Enter password" name="password" required value="">
+                <button type="submit">Submit</button>
+        </form>
+    </div>
+    <%- include('footer.ejs') %>
+</body>
+</html>

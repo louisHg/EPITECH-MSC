@@ -1,0 +1,36 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'cleaning package'
+                sh 'mvn clean package'
+                echo 'Notify GitLab'
+                updateGitlabCommitStatus name: 'build', state: 'pending'
+                echo 'build step goes here'
+                updateGitlabCommitStatus name: 'build', state: 'success'
+            }
+        }
+        stage('test'){
+            steps {
+                echo 'Notify GitLab'
+                updateGitlabCommitStatus name: 'test', state: 'pending'
+                echo 'test step goes here'
+                updateGitlabCommitStatus name: 'test', state: 'success'
+            }
+        }
+        stage('Code analysis') {
+            steps {
+                echo 'debut sonarQube'
+                withSonarQubeEnv('SonarQube') {
+                    sh 'mvn sonar:sonar'
+                }
+            }
+        }
+    }
+}

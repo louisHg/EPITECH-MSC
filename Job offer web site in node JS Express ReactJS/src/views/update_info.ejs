@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="src/scriptjs/index.js"></script>
+    <script src="src/scriptjs/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/indexpc.css">
+    <link rel="stylesheet" href="/css/indextel.css">
+    <link rel="stylesheet" href="/css/indextab.css">
+    <link rel="icon" href="/images/wowv2.png">
+    <title>AdminPage - Epid Cavalry</title>
+</head>
+<body>
+    <%- include('header_admin.ejs') %>
+    <!--====form section start====-->
+    <div>
+        <form action="/UPDATE_INFO" method="POST" class="bording_tableau">
+                <label>Name</label>
+                <input type="text" placeholder="Enter a name" name="name" required value="<%= editData.name%>">
+                <label>Surname</label>
+                <input type="text" placeholder="Enter a surname" name="surname" required value="<%= editData.surname%>">
+                <label>Graduate</label>
+                <input type="text" placeholder="Graduate" name="graduate" required value="<%= editData.graduate%>">
+                <label>Experience level</label>
+                <input type="text" placeholder="Experience level" name="experience_lvl" required value="<%= editData.experience_lvl%>">
+                <label>Preffered language</label>
+                <input type="text" placeholder="Preffered language" name="preffered_langage" required value="<%= editData.preffered_langage%>">
+                <label>Language spoken</label>
+                <input type="text" placeholder="Language spoken" name="language_spoken" required value="<%= editData.language_spoken%>">
+                <label>Skills</label>
+                <input type="text" placeholder="Skills" name="skills" required value="<%= editData.skills%>">
+                <label>Hobbies</label>
+                <input type="text" placeholder="Hobbies" name="hobbies" required value="<%= editData.hobbies%>">
+                <label>Educational_path</label>
+                <input type="text" placeholder="Educational_path" name="educational_path" required value="<%= editData.educational_path%>">
+                <label>Professional_career</label>
+                <input type="text" placeholder="professional_career" name="professional_career" required value="<%= editData.professional_career%>">
+                <button type="submit">Submit</button>
+        </form>
+    </div>
+    <%- include('footer.ejs') %>
+</body>
+</html>

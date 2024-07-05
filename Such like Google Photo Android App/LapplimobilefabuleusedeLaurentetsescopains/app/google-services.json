@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "165178521148",
+    "project_id": "laurentetsescopains-1299d",
+    "storage_bucket": "laurentetsescopains-1299d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165178521148:android:0b426649ba9b5c8b923539",
+        "android_client_info": {
+          "package_name": "com.example.lapplimobilefabuleusedelaurentetsescopains"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165178521148-iofhfq4oamjmrn1gks2lfef0kbslfpuc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBejrYuQuZwdYGXmVycvqa24xtF3DbNSVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "165178521148-iofhfq4oamjmrn1gks2lfef0kbslfpuc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

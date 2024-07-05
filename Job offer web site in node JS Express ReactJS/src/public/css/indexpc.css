@@ -1,0 +1,199 @@
+@media screen and (min-width:1024px) {
+
+    .page {
+        font: 16px/22px "Lucida Grande", Tahoma, Verdana, sans-serif;
+        color: #000000;
+      }
+
+    body {
+        background: rgb(199, 199, 199);
+        }
+    .topnav {
+        overflow: hidden;
+        background:rgb(36, 45, 46);
+        margin-bottom: 1%;
+        cursor: pointer;
+        }
+
+        
+      
+        
+    
+        /* Style the links inside the navigation bar */
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+      
+        /* Change the color of links on hover */
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+      
+        /* Add a color to the active/current link */
+        .topnav a.active {
+          background-color: #04AA6D;
+          color: white;
+        }
+      
+        /* Right-aligned section inside the top navigation */
+        .topnav-right {
+          float: right;
+          background-color: rgb(36, 45, 46);
+        }
+
+
+        .topnav-right form{
+            background-color: rgb(36, 45, 46);
+        }
+
+        .topnav-right form a{
+            background-color: rgb(36, 45, 46);
+            font-weight: bold;
+        }
+
+    .page{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container{
+       width: 35%;
+        margin-left: 50px;
+    }
+    .container2{
+        width: 50%;
+    }
+
+    .bloca{
+        height: 65vh;
+        width: 90%;
+        background-color: rgb(0, 185, 218);
+        border-radius: 1px;
+   }
+
+    .ads{
+        margin: 1%;
+    }
+
+    .bloc1{
+        height: 40vh;
+        width: 100%;
+        background-color: rgb(100, 212, 212);
+        margin-bottom: 20px;
+   }
+    .bloc2{
+        height: 40vh;
+        width: 100%;
+        background-color: rgb(100, 212, 212);
+        margin-bottom: 20px;
+   }
+    .bloc3{
+        height: 40vh;
+        width: 100%;
+        background-color: rgb(100, 212, 212);
+        margin-bottom: 20px;
+   }
+   .bloc4{
+        height: 40vh;
+        width: 100%;
+        background-color: rgb(100, 212, 212);
+        margin-bottom: 20px;
+}
+    .bloc5{
+        height: 40vh;
+        width: 100%;
+        background-color: rgb(100, 212, 212);
+        margin-bottom: 20px;
+   }
+    .bloc6{
+        height: 40vh;
+        width: 100%;
+        background-color: rgb(100, 212, 212);
+        margin-bottom: 20px;
+   }
+    .bloc7{
+        height: 40vh;
+        width: 100%;
+        background-color: rgb(100, 212, 212);
+        margin-bottom: 20px;
+   }
+    .bloc8{
+        height: 40vh;
+        width: 100%;
+        background-color: rgb(100, 212, 212);
+        margin-bottom: 20px;
+   }
+    .bloc9{
+        height: 40vh;
+        width: 100%;
+        background-color: rgb(100, 212, 212);
+        margin-bottom: 20px;
+   }
+    .bloc10{
+        height: 40vh;
+        width: 100%;
+        background-color: rgb(100, 212, 212);
+        margin-bottom: 20px;
+   }
+
+
+   .footer-dark {
+    padding:10px 0;
+    color:#f0f9ff;
+    background-color:#282d32;
+    }
+  
+.footer-dark h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+    
+}
+  
+    .footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+    text-align:center;
+    
+  }
+
+    .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+    margin: 5% 5%;
+    
+}
+
+    .footer-dark ul a:hover {
+    opacity:0.8;
+}
+
+    .footer-dark .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+    }
+
+    .bording_tableau{
+        margin-bottom: 15px;
+    }
+
+
+    #more {display: none;}
+
+    
+}

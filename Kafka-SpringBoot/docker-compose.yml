@@ -1,0 +1,134 @@
+version: "3"
+services:
+
+  chrome:
+    image: selenium/node-chrome:4.7.2-20221219
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+    networks:
+      - spring-cloud-network
+    restart: always
+
+  # firefox:
+  #   image: selenium/node-firefox:4.7.2-20221219
+  #   shm_size: 2gb
+  #   depends_on:
+  #     - selenium-hub
+  #   environment:
+  #     - SE_EVENT_BUS_HOST=selenium-hub
+  #     - SE_EVENT_BUS_PUBLISH_PORT=4442
+  #     - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+  #   networks:
+  #     - spring-cloud-network
+
+  selenium-hub:
+    image: selenium/hub:4.7.2-20221219
+    container_name: selenium-hub
+    ports:
+      - "4444:4444"
+      - "4442:4442"
+    networks:
+      - spring-cloud-network
+    restart: always
+
+  postgres:
+    image: postgres:latest
+    container_name: cryptodatabase
+    environment:
+      POSTGRES_DB: cryptodatabase
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./dump_cryptodatabase.sql:/docker-entrypoint-initdb.d/dump_cryptodatabase.sql
+    ports:
+      - "8278:5432"
+    networks:
+      - spring-cloud-network
+    restart: always
+
+  kafkaProducerCrypto:
+    container_name: KafkaProducerCrypto
+    build:
+      context: ./KafkaProject
+      dockerfile: Dockerfile_producer
+    image: kafka-producer-crypto:latest
+    depends_on:
+      - broker
+      - zookeeper
+      - selenium-hub
+    networks:
+      - spring-cloud-network
+    restart: always
+      
+
+# Connexion db throw docker problem 
+  kafkaconsumercrypto:
+    container_name: KafkaConsumerCrypto
+    build:
+      context: ./KafkaProject
+      dockerfile: Dockerfile_consumer
+    image: kafka-consummer:latest
+    depends_on:
+      - broker
+      - zookeeper
+      - postgres
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/cryptodatabase
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+    networks:
+      - spring-cloud-network
+    restart: always
+
+# Connexion db throw docker problem + showing where is export api
+  springApi:
+    container_name: springApi
+    build:
+      context: ./KafkaProject
+      dockerfile: Dockerfile_api
+    image: spring-api:latest
+    ports:
+      - 1180:1180
+    depends_on:
+      - postgres
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/cryptodatabase
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+    restart: always
+    networks:
+      - spring-cloud-network
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:5.5.0
+    container_name: zookeeper
+    networks: 
+      - spring-cloud-network  
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+
+  broker:
+    image: confluentinc/cp-kafka:5.5.0
+    container_name: broker
+    ports: 
+      - "19092:19092"
+    networks: 
+      - spring-cloud-network  
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker:9092,CONNECTIONS_FROM_HOST://localhost:19092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,CONNECTIONS_FROM_HOST:PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+networks:
+  spring-cloud-network:

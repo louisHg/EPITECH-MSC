@@ -1,0 +1,56 @@
+<div class="col colone1 max-width"></div>
+<div class="col colone2 max-width">
+            <!-- annonces-->
+    <% for (let i=0; i<data.length; i++) {   %>
+        <div class="card left bouton">
+        <div class="flex align">
+            <h5><%= data[i].name %></h5>
+            <div class="center">
+                <button id="<%=data[i].idadvertissements %>" class="favorite styled" type="submit">
+                    <i class="fa fa-plus-circle"></i>
+                </button>
+            </div>
+        </div>
+        <div>Nom de l'entreprise</div>
+        <div><%= data[i].title%></div><br>
+        <div><%= data[i].short_description%></div><br>
+        <div><%= data[i].place%></div><br>
+        <div><%= data[i].type%></div>
+        </div>
+    <% } %>
+</div>
+   
+<div class="col colone3 max-width">
+    
+<% for (let i=0; i<data.length; i++) {  a = i %>
+    <div class="card right bouton hide" id="<%=data[i].idadvertissements%>card">
+        <div class="flex">
+            <h3><%= data[i].title %></h3>
+            <div class="center">
+                <button class="favorite styled" type="submit" id="<%=data[i].idadvertissements%>btnright">
+                    <i class="fa fa-minus-circle"></i>
+                </button>
+            </div>
+        </div>
+            <div>Nom de l'entreprise</div>
+            <div class="flex">
+                <div><%= data[i].place%></div><br>  
+                <form method="POST" action="/">
+                    <button type="titre">
+                      <a>Log out</a>  
+                    </button>
+                </form>
+            </div>
+            
+            <div class="topnav-right">
+                <a href="/job">APPLY</a>
+            </div>
+            <div><%= data[i].wage%></div><br>
+            <div class="max-width border"></div>
+            <div class="box" style="height:400px;width:640px;overflow:auto;color:black;scrollbar-base-color:gold;font-family:sans-serif;padding:10px;"><p><%= data[i].full_description%></p>
+            <br><div><%= data[i].working_time%></div>
+            </div>
+    </div>
+    <% } %>
+
+</div>

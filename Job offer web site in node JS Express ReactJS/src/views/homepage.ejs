@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="/css/indexpc.css">
+        <link rel="stylesheet" href="/css/indextel.css">
+        <link rel="stylesheet" href="/css/indextab.css">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="icon" href="/images/wowv2.png">
+        <title>HomePage - Epid Cavalry</title>
+    </head>
+    <body>
+        <%- include('header.ejs') %>
+        <div class="container flex">
+            <%- include('ad.ejs'); %>
+        </div>
+        <script>
+            $(document).ready(function() {
+            $('.left button').click(function(e) {
+            e.preventDefault();
+            var btn = "#"+event.target.id+"";
+            var card = "#"+event.target.id+"card";
+            $(`.col .right`).addClass('hide');
+            $(document).ready(function() {
+                $(btn).addClass('hide');
+                $(".left button").removeClass('hide');
+                $(card).removeClass('hide');
+            });
+            });
+            });
+            $(document).ready(function() {
+                $(".right button").click( function(e) {
+                    e.preventDefault();
+                    $(".left button").removeClass('hide');
+                    $(`.col .right`).addClass('hide');
+            });
+            });
+        </script>
+
+        <%- include('footer.ejs') %>
+        
+    </body>
+</html>
+
+

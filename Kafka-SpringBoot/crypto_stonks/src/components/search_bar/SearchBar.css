@@ -1,0 +1,5 @@
+.messenger-input:focus {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+}

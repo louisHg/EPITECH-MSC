@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="src/scriptjs/index.js"></script>
+    <script src="src/scriptjs/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/admin_table.css">
+    <link rel="icon" href="/images/wowv2.png">
+    <title>AdminPage - Epid Cavalry</title>
+</head>
+<body>
+    <%- include('header_admin.ejs') %>
+
+    <div class="page">
+        <!-- Users Handler -->
+        <div class="table-data">
+            <h1> Welcome Master</h1>
+            <h2> Users data</h2>
+            <table border="1", class="bording_tableau">
+                <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email Address</th>
+                    <th>Password</th>
+                    <th>Admin</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                </thead>
+
+                <%
+                if(userData.length!=0){
+                    var i=1;
+                    userData.forEach(function(data)
+                    {
+                %>
+
+                <tbody>
+                <tr>
+                    <td><%=data.fullname %></td>
+                    <td><%=data.email %></td>
+                    <td>Hide for confidentiality</td>
+                    <td><%=data.category %></td>
+                    <td><a href="/edit/<%=data.id%>">Edit</a></td>
+                    <td><a href="/delete/<%=data.id%>">Delete</a></td>
+                </tr>
+                </tbody>
+                <%  i++; }) %>
+                <% } else{ %>
+                    <tr>
+                        <td colspan="7">No Data Found</td>
+                    </tr>
+                <% } %>
+            </table>
+
+            
+        </div>    
+    </div>
+
+    <%- include('footer.ejs') %>
+</body>
+</html>

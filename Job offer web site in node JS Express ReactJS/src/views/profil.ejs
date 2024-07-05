@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="/css/indexpc.css">
+        <link rel="stylesheet" href="/css/indextel.css">
+        <link rel="stylesheet" href="/css/indextab.css">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="icon" href="/images/wowv2.png">
+        <title>ProfilPage - Epid Cavalry</title>
+    </head>
+    <body>
+        <%- include('header.ejs') %>
+        
+        <div>
+            <form action="/UPDATE_PROFIL" method="POST" class="bording_tableau">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter a name" name="name" required value="">
+                    <label>Surname</label>
+                    <input type="text" placeholder="Enter a surname" name="surname" required value="">
+                    <label>Graduate</label>
+                    <input type="text" placeholder="Enter your graduate" name="graduate" required value="">
+                    <label>Experience Level</label>
+                    <input type="number" placeholder="Enter your experience level" name="experience_lvl" required value="">
+                    <label>Preffered langage</label>
+                    <input type="text" placeholder="Enter your preffered langage" name="preffered_langage" required value="">
+                    <label>Language_spoken</label>
+                    <input type="text" placeholder="Language spoken" name="language_spoken" required value="">
+                    <label>Skills</label>
+                    <input type="text" placeholder="skills" name="skills" required value="">
+                    <label>Hobbies</label>
+                    <input type="text" placeholder="Hobbies" name="hobbies" required value="">
+                    <label>Educational_path</label>
+                    <input type="text" placeholder="Educational_path" name="educational_path" required value="">
+                    <label>Professional_career</label>
+                    <input type="text" placeholder="Professional_career" name="professional_career" required value="">
+                    <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <%- include('footer.ejs') %>
+    </body>
+</html>

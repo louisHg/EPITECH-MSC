@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  zookeeper:
+    image: wurstmeister/zookeeper
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+  kafka:
+    image: wurstmeister/kafka
+    container_name: kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: localhost
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+  postgres:
+    image: postgres:latest
+    container_name: cryptodatabase
+    environment:
+      POSTGRES_DB: cryptodatabase
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    # volumes:
+    #   - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    ports:
+      - "8278:5432"
+
+
+      

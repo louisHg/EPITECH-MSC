@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/imageViewFullImages"
+            android:layout_width="380dp"
+            android:layout_height="520dp"
+            android:layout_marginLeft="7dp"/>
+
+        <EditText
+            android:id="@+id/imageDescription"
+            android:layout_width="383dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="620dp"
+            android:hint="Description..."
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="525dp"
+            android:text="delete" />
+
+        <EditText
+            android:id="@+id/imageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Images Page"
+            android:textSize="20sp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="525dp"/>
+
+        <EditText
+            android:id="@+id/imageDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DateCreation"
+            android:textSize="20sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="570dp"/>
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="525dp"
+            android:text="update" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="580dp"
+            android:text="Quality of the image:"
+            android:visibility="invisible"
+            android:textSize="20sp"
+            android:layout_marginLeft="170dp"/>
+
+        <EditText
+            android:id="@+id/imageQuality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:ems="2"
+            android:layout_marginLeft="360dp"
+            android:visibility="invisible"
+            android:layout_marginTop="570dp"/>
+
+        <TextView
+            android:id="@+id/pourcent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            android:layout_marginLeft="390dp"
+            android:layout_marginTop="580dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="570dp"
+            android:visibility="invisible"
+            tools:ignore="MissingConstraints" />
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

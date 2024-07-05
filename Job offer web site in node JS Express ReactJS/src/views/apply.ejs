@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="/css/indexpc.css">
+        <link rel="stylesheet" href="/css/indextel.css">
+        <link rel="stylesheet" href="/css/indextab.css">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="icon" href="/images/wowv2.png">
+        <title>ProfilPage - Epid Cavalry</title>
+    </head>
+    <body>
+        <%- include('header.ejs') %>
+        
+        <div>
+            <form action="/APPLY_JOB" method="POST" class="bording_tableau">
+                    <label>Please send a message for the employer</label>
+                    <label>Name of the job</label>
+                    <input type="text" placeholder="Enter job's name" name="title" required value="">
+                    <label>Mail</label>
+                    <input type="text" placeholder="Enter the place" name="mail_sent" required value="">
+                    <label>name_concerned</label>
+                    <input type="text" placeholder="Enter the working time" name="name_concerned" required value="">
+                    <label>Message</label>
+                    <input type="text" placeholder="Enter the working time" name="message" required value="">
+                    <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <%- include('footer.ejs') %>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <title>Inscription</title>
+    <link rel="icon" href="/images/wowv2.png">
+</head>
+<body>
+    <div class="signup">
+        <div class="hidden">
+            <% if(errors !== "") {%>
+                <% errors.forEach(function(item) { %>
+                    <div class="success">
+                        <p><%- item %></p>
+                    </div>
+                <% })%>
+            <%}%>
+        </div>
+        <h1>Inscrivez-vous</h1>
+        <form method="post" action="/register">
+          <p><input type="text" name="fullname" id="fullname" value="" placeholder="Name"></p>
+          <p><input type="text" name="email" id="email" value="" placeholder="Email"></p>
+          <p><input type="password" name="password" id="password" value="" placeholder="Password"></p>
+          <p><input type="password" name="passwordConfirmation" id="passwordConfirmation" value="" placeholder="Confirm your password"></p>
+          <br>
+          <p><input type="submit" href="" value="Sign up"/></p>
+          <br>
+          <a href="/login">Already a member? Please login here.</a>
+        </form>
+    </div>
+
+</body>
+</html>
