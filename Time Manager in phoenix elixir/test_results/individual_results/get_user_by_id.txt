@@ -1,0 +1,19 @@
+NAME: get_user_by_id
+
+URL = http://localhost:4000/api/users/5f5b8583-66a4-4a26-ac80-66b2729b89b6
+Result = SUCCESS
+Response Details = 
+{
+    "details": {
+        "email": "maxence.marqui@gmail.com",
+        "first_name": "Maxence",
+        "id": "5f5b8583-66a4-4a26-ac80-66b2729b89b6",
+        "last_name": "Marqui",
+        "role": "Admin",
+        "username": "Maxence"
+    },
+    "name": "get_user_by_id",
+    "status_code": 200,
+    "success": true,
+    "url": "http://localhost:4000/api/users/5f5b8583-66a4-4a26-ac80-66b2729b89b6"
+}

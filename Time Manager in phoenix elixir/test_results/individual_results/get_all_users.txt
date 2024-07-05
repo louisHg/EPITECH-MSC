@@ -1,0 +1,213 @@
+NAME: get_all_users
+
+URL = http://localhost:4000/api/users/all
+Result = SUCCESS
+Response Details = 
+{
+    "details": [
+        {
+            "email": "employee14.employee14@employee14.employee14",
+            "first_name": "employee14",
+            "id": "927d546d-11d4-435c-8f3e-1504a67311ad",
+            "last_name": "employee14",
+            "role": "Employee",
+            "username": "employee14"
+        },
+        {
+            "email": "manager1.manager1@manager1.manager1",
+            "first_name": "Manager 1",
+            "id": "21fbc117-f2a4-4d6e-a7de-b8ba2c4efa3d",
+            "last_name": "Manager 1",
+            "role": "Manager",
+            "username": "Manager 1"
+        },
+        {
+            "email": "manager2.manager2@manager2.manager2",
+            "first_name": "Manager 2",
+            "id": "d433d106-9e53-4296-b665-74dd43ccc6a4",
+            "last_name": "Manager 2",
+            "role": "Manager",
+            "username": "Manager 2"
+        },
+        {
+            "email": "employee15.employee15@employee15.employee15",
+            "first_name": "employee15",
+            "id": "2ae388ba-2cc5-4e0e-bd27-717d145651df",
+            "last_name": "employee15",
+            "role": "Employee",
+            "username": "employee15"
+        },
+        {
+            "email": "manager3.manager3@manager3.manager3",
+            "first_name": "Manager 3",
+            "id": "570ec0d8-e9fc-48ae-ad07-6548fd59cbdc",
+            "last_name": "Manager 3",
+            "role": "Manager",
+            "username": "Manager 3"
+        },
+        {
+            "email": "manager4.manager4@manager4.manager4",
+            "first_name": "Manager 4",
+            "id": "510aa653-a527-4ea7-a1fa-6177f8622dc4",
+            "last_name": "Manager 4",
+            "role": "Manager",
+            "username": "Manager 4"
+        },
+        {
+            "email": "manager5.manager5@manager5.manager5",
+            "first_name": "Manager 5",
+            "id": "42428ee7-cd44-4a3e-a27c-1b1db6ad3187",
+            "last_name": "Manager 5",
+            "role": "Manager",
+            "username": "Manager 5"
+        },
+        {
+            "email": "employee1.employee1@employee1.employee1",
+            "first_name": "employee1",
+            "id": "bb4c3aa7-cceb-4639-9d4d-3b14d7847abf",
+            "last_name": "employee1",
+            "role": "Employee",
+            "username": "employee1"
+        },
+        {
+            "email": "employee2.employee2@employee2.employee2",
+            "first_name": "employee2",
+            "id": "228cbfb2-1aa4-4cb0-8a45-58c26d03683e",
+            "last_name": "employee2",
+            "role": "Employee",
+            "username": "employee2"
+        },
+        {
+            "email": "employee3.employee3@employee3.employee3",
+            "first_name": "employee3",
+            "id": "96676f9c-ce10-44e4-93b5-e56101b15344",
+            "last_name": "employee3",
+            "role": "Employee",
+            "username": "employee3"
+        },
+        {
+            "email": "employee4.employee4@employee4.employee4",
+            "first_name": "employee4",
+            "id": "9e11f806-01e7-4099-b3bb-0974ccc18506",
+            "last_name": "employee4",
+            "role": "Employee",
+            "username": "employee4"
+        },
+        {
+            "email": "employee5.employee5@employee5.employee5",
+            "first_name": "employee5",
+            "id": "3cf7c660-0edb-41a2-a38a-3f5f7fe984a6",
+            "last_name": "employee5",
+            "role": "Employee",
+            "username": "employee5"
+        },
+        {
+            "email": "employee6.employee6@employee6.employee6",
+            "first_name": "employee6",
+            "id": "6e4d1533-7c7b-4033-a50d-5871ac675dc4",
+            "last_name": "employee6",
+            "role": "Employee",
+            "username": "employee6"
+        },
+        {
+            "email": "employee7.employee7@employee7.employee7",
+            "first_name": "employee7",
+            "id": "fd19e4ee-1487-4822-a9e5-caba9578bd0b",
+            "last_name": "employee7",
+            "role": "Employee",
+            "username": "employee7"
+        },
+        {
+            "email": "employee8.employee8@employee8.employee8",
+            "first_name": "employee8",
+            "id": "3a55834c-5792-4b36-bcaf-7686400730b8",
+            "last_name": "employee8",
+            "role": "Employee",
+            "username": "employee8"
+        },
+        {
+            "email": "employee9.employee9@employee9.employee9",
+            "first_name": "employee9",
+            "id": "e9e2f6a8-cb2c-49ec-93b2-dd89204c07b9",
+            "last_name": "employee9",
+            "role": "Employee",
+            "username": "employee9"
+        },
+        {
+            "email": "employee10.employee10@employee10.employee10",
+            "first_name": "employee10",
+            "id": "82317655-603c-4d10-b2d9-858ffce55675",
+            "last_name": "employee10",
+            "role": "Employee",
+            "username": "employee10"
+        },
+        {
+            "email": "employee11.employee11@employee11.employee11",
+            "first_name": "employee11",
+            "id": "b271f22a-6d18-4f8c-8f82-37f659dbc6e3",
+            "last_name": "employee11",
+            "role": "Employee",
+            "username": "employee11"
+        },
+        {
+            "email": "employee12.employee12@employee12.employee12",
+            "first_name": "employee12",
+            "id": "1bc38b27-a4c9-4d02-8885-7b65d184696b",
+            "last_name": "employee12",
+            "role": "Employee",
+            "username": "employee12"
+        },
+        {
+            "email": "employee13.employee13@employee13.employee13",
+            "first_name": "employee13",
+            "id": "6dd0c9fe-ca06-418c-aee8-c15d18578fff",
+            "last_name": "employee13",
+            "role": "Employee",
+            "username": "employee13"
+        },
+        {
+            "email": "tm1.tester@tester.tester",
+            "first_name": "Team Member 1",
+            "id": "875abef9-98f4-43d7-898a-3551ccd12d53",
+            "last_name": "Team Member 1",
+            "role": "Employee",
+            "username": "Team Member 1"
+        },
+        {
+            "email": "tm2.tester@tester.tester",
+            "first_name": "Team Member 2",
+            "id": "6c7e2c3a-2a4a-463b-9b7f-cec8ce9346ba",
+            "last_name": "Team Member 2",
+            "role": "Employee",
+            "username": "Team Member 2"
+        },
+        {
+            "email": "tm3.tester@tester.tester",
+            "first_name": "Team Member 3",
+            "id": "3b5870ef-2ad5-4ea4-ba31-06b71b665e4f",
+            "last_name": "Team Member 3",
+            "role": "Employee",
+            "username": "Team Member 3"
+        },
+        {
+            "email": "maxence.marqui@gmail.com",
+            "first_name": "Maxence",
+            "id": "5f5b8583-66a4-4a26-ac80-66b2729b89b6",
+            "last_name": "Marqui",
+            "role": "Admin",
+            "username": "Maxence"
+        },
+        {
+            "email": "modified.tester@tester.tester",
+            "first_name": "Modified User",
+            "id": "d41a0131-d02d-418c-b92d-bc3753da15f9",
+            "last_name": "Modified User",
+            "role": "Manager",
+            "username": "Modified User"
+        }
+    ],
+    "name": "get_all_users",
+    "status_code": 200,
+    "success": true,
+    "url": "http://localhost:4000/api/users/all"
+}

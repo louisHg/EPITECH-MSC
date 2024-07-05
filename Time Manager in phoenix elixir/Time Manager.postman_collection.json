@@ -1,0 +1,859 @@
+{
+	"info": {
+		"_postman_id": "1c6c6268-8abe-4ad4-af47-af463f516ca6",
+		"name": "Time Manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18941192"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get User by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/users/:user_id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users",
+								":user_id"
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": "43315da4-3612-485b-b035-fec7365b374a"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User by Email Username",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/users?email=maxence.marqui@gmail.com&username=Maximus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "maxence.marqui@gmail.com"
+								},
+								{
+									"key": "username",
+									"value": "Maximus"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\":{\n        \"username\": \"Maximus\",\n        \"email\": \"maxence.marqui@gmail.com\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/users/:user_id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users",
+								":user_id"
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": "d11f1cb3-6fd2-445e-8ec3-59c0a03a8652"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/users/:user_id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users",
+								":user_id"
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": "51804ec5-bf6e-471f-a975-c5cba0fb5447"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Working Time",
+			"item": [
+				{
+					"name": "Get All User working time",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/workingtimes/:user_id?start=&end=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"workingtimes",
+								":user_id"
+							],
+							"query": [
+								{
+									"key": "start",
+									"value": ""
+								},
+								{
+									"key": "end",
+									"value": ""
+								}
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": "7245ded4-cf19-431f-befd-ea69da152767"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get working user by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/workingtimes/:user_id/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"workingtimes",
+								":user_id",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": "d11f1cb3-6fd2-445e-8ec3-59c0a03a8652"
+								},
+								{
+									"key": "id",
+									"value": "9ff61002-a756-415f-bac2-555c090ee820"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add working time",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"working_time\":{\n        \"start\":\"2022-11-04 09:45:00\",\n        \"end\":\"2022-11-04 17:30:00\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/workingtimes/:user_id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"workingtimes",
+								":user_id"
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": "7245ded4-cf19-431f-befd-ea69da152767"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update working time",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"working_time\": {\n        \"end\": \"2022-11-25T17:30:00\",\n        \"start\": \"2022-10-25T09:00:00\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/workingtimes/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"workingtimes",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9ff61002-a756-415f-bac2-555c090ee820"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete working time",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/workingtimes/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"workingtimes",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9ff61002-a756-415f-bac2-555c090ee820"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Clocking",
+			"item": [
+				{
+					"name": "Get User Clock",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/clocks/:user_id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"clocks",
+								":user_id"
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": "7245ded4-cf19-431f-befd-ea69da152767"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clock in Clock out",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/clocks/:user_id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"clocks",
+								":user_id"
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/users/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Role",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"role\": \"Manager\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/users/:user_id/update-role",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users",
+								":user_id",
+								"update-role"
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": "22014c7e-9f22-4ad7-9804-7dbd03324d35"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Teams",
+			"item": [
+				{
+					"name": "Get all teams",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/teams/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"teams",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single team",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/teams/:team_id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"teams",
+								":team_id"
+							],
+							"variable": [
+								{
+									"key": "team_id",
+									"value": "4f70a690-718d-442f-adaf-37741828ddaa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create team",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"team\":{\n        \"name\":\"Trop poggers la première team\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/teams/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"teams",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add user to team",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\":\"7245ded4-cf19-431f-befd-ea69da152767\",\n    \"team_id\":\"5acfa11d-748b-48ff-971b-399a5067a48c\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/teams/add_user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"teams",
+								"add_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user from team",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\":\"dcbc59d8-66e1-4b4b-bd0f-b483497e462f\",\n    \"team_id\":\"4f70a690-718d-442f-adaf-37741828ddaa\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/teams/remove_user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"teams",
+								"remove_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete team",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"team\":{\n        \"name\":\"Trop poggers la première team\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/teams/:team_id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"teams",
+								":team_id"
+							],
+							"variable": [
+								{
+									"key": "team_id",
+									"value": "4f70a690-718d-442f-adaf-37741828ddaa"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stats",
+			"item": [
+				{
+					"name": "Get User Presence",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/stats/user/:user_id?startDate=2022-11-04 09:45:00&endDate=2022-11-10 17:45:00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"stats",
+								"user",
+								":user_id"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2022-11-04 09:45:00"
+								},
+								{
+									"key": "endDate",
+									"value": "2022-11-10 17:45:00"
+								}
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": "7245ded4-cf19-431f-befd-ea69da152767"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Team Presence",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/stats/team/:team_id?startDate=2022-11-04 09:45:00&endDate=2022-11-10 17:45:00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"stats",
+								"team",
+								":team_id"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2022-11-04 09:45:00"
+								},
+								{
+									"key": "endDate",
+									"value": "2022-11-10 17:45:00"
+								}
+							],
+							"variable": [
+								{
+									"key": "team_id",
+									"value": "5acfa11d-748b-48ff-971b-399a5067a48c"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/auth/login?email=maxence.marqui@gmail.com&password=Test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "maxence.marqui@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "Test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\":{\n        \"username\": \"Maxence\",\n        \"email\": \"maxence.marqui@gmail.com\",\n        \"last_name\": \"Marqui\",\n        \"first_name\": \"Maxence\",\n        \"password\": \"Test\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjc3JmIjoiRzE4Z1NTc3FMeGtBSlVOMkhSWXNFRDUzSVFVc2N3dFFoblp4bGh1Sm5jMzF0RHpoazBMb2RLR2ciLCJ1c2VyX2lkIjoiNzI0NWRlZDQtY2YxOS00MzFmLWJlZmQtZWE2OWRhMTUyNzY3IiwiYXVkIjoiSm9rZW4iLCJleHAiOjE2NjgwODU2MTgsImlhdCI6MTY2ODA3ODQxOCwiaXNzIjoiSm9rZW4iLCJqdGkiOiIyc2l2cHNrMDkyODM5M2M0dGcwMDA3MjEiLCJuYmYiOjE2NjgwNzg0MTh9.BAkvY96TqNS7_I8isrgGGd2hPiIURc0Hi2nuu2SM4lM",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

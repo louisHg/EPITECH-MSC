@@ -1,0 +1,23 @@
+NAME: login
+
+URL = http://localhost:4000/auth/login
+Result = SUCCESS
+Response Details = 
+{
+    "details": {
+        "jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjc3JmIjoiWEg1alBnTWtkbThpT2dWbUNDay1JbE1BSUJna0RIMHlkSzBNd2JFMEdLWjBrS0ZSajhkb0hUS2YiLCJ1c2VyX2lkIjoiNWY1Yjg1ODMtNjZhNC00YTI2LWFjODAtNjZiMjcyOWI4OWI2IiwiYXVkIjoiSm9rZW4iLCJleHAiOjE2NjgzODIyMjUsImlhdCI6MTY2ODM3NTAyNSwiaXNzIjoiSm9rZW4iLCJqdGkiOiIyc2ppZDZmc29nY2NraWo0cXMwMDBlZTYiLCJuYmYiOjE2NjgzNzUwMjV9.TBqXiZTEArdHqjDG0F7Lns8njHUeJ-I9ZK5fr9BftVs",
+        "status": "ok",
+        "user": {
+            "email": "maxence.marqui@gmail.com",
+            "first_name": "Maxence",
+            "id": "5f5b8583-66a4-4a26-ac80-66b2729b89b6",
+            "last_name": "Marqui",
+            "role": "Admin",
+            "username": "Maxence"
+        }
+    },
+    "name": "login",
+    "status_code": 200,
+    "success": true,
+    "url": "http://localhost:4000/auth/login"
+}

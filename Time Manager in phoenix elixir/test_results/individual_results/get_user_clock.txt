@@ -1,0 +1,16 @@
+NAME: get_user_clock
+
+URL = http://localhost:4000/api/clocks/d41a0131-d02d-418c-b92d-bc3753da15f9
+Result = SUCCESS
+Response Details = 
+{
+    "details": {
+        "id": "6bc9039a-1254-4dd1-b4f1-11567ddae885",
+        "status": false,
+        "time": "2022-11-13T22:30:24"
+    },
+    "name": "get_user_clock",
+    "status_code": 200,
+    "success": true,
+    "url": "http://localhost:4000/api/clocks/d41a0131-d02d-418c-b92d-bc3753da15f9"
+}

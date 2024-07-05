@@ -1,0 +1,12 @@
+NAME: delete_team
+
+URL = http://localhost:4000/api/teams/9840f690-058f-4eab-aac6-e4dec28a3872
+Result = SUCCESS
+Response Details = 
+{
+    "details": "Team succesfully deleted",
+    "name": "delete_team",
+    "status_code": 200,
+    "success": true,
+    "url": "http://localhost:4000/api/teams/9840f690-058f-4eab-aac6-e4dec28a3872"
+}

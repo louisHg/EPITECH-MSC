@@ -1,0 +1,34 @@
+NAME: remove_team_member_1
+
+URL = http://localhost:4000/api/teams/remove_user
+Result = SUCCESS
+Response Details = 
+{
+    "details": {
+        "team_data": {
+            "id": "9840f690-058f-4eab-aac6-e4dec28a3872",
+            "name": "Trop poggers la premi\u00e8re team"
+        },
+        "team_members": [
+            {
+                "id": "c444108d-2dc4-4251-871f-ac451232e2a4",
+                "team_id": "9840f690-058f-4eab-aac6-e4dec28a3872",
+                "user_id": "d41a0131-d02d-418c-b92d-bc3753da15f9"
+            },
+            {
+                "id": "6fd16953-cf0f-4b32-8b7b-249d20869d96",
+                "team_id": "9840f690-058f-4eab-aac6-e4dec28a3872",
+                "user_id": "875abef9-98f4-43d7-898a-3551ccd12d53"
+            },
+            {
+                "id": "e08bf47f-3ef7-487f-b5fb-dbee9f59e482",
+                "team_id": "9840f690-058f-4eab-aac6-e4dec28a3872",
+                "user_id": "875abef9-98f4-43d7-898a-3551ccd12d53"
+            }
+        ]
+    },
+    "name": "remove_team_member_1",
+    "status_code": 200,
+    "success": true,
+    "url": "http://localhost:4000/api/teams/remove_user"
+}

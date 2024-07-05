@@ -1,0 +1,97 @@
+# Version of docker-compose.
+version: '3'
+
+# Containers we're going to run.
+services:
+  # Vue Js Frontend container.
+  vue:
+    build:
+      context: ./web_interfaces
+    ports:
+      - '8080:8080'
+  # Phoenix Backend container.
+  phoenix:
+    build:
+      context: ./phoenix_backend
+    ports:
+        - '4000:4000'
+    environment:
+      # Variables to connect to our Postgres server.
+      PGUSER: postgres
+      PGPASSWORD: postgres
+      PGDATABASE: api_time_manager_dev
+      PGPORT: 5432
+      # Hostname of our Postgres container.
+      PGHOST: db
+    depends_on:
+      # The DB container needs to be started before we start this container.
+      - db
+  db:
+    # We use the predefined Postgres image.
+    image: postgres:9.6
+    environment:
+      # Set user/password for Postgres.
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      # Set a path where Postgres should store the data.
+      PGDATA: /var/lib/postgresql/data/pgdata
+    restart: always
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  #Cadvisor provides container users an understanding of the resource usage and performance characteristics of their running containers
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor
+    container_name: cadvisor
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    expose:
+      - 8080
+    ports:
+      - "8005:8080"
+    networks:
+      - monitoring
+  
+  #Prometheus is a systems and service monitoring system
+  prometheus:
+    image: prom/prometheus:v2.0.0
+    container_name: prometheus
+    volumes:
+      - ./docker/prometheus/:/etc/prometheus/
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention=200h'
+    expose:
+      - 9090
+    ports:
+      - "9090:9090"
+    networks:
+      - monitoring
+  #Grafana for UI, http:IP:3000/
+  grafana:
+    image: grafana/grafana:4.6.2
+    container_name: grafana
+    volumes:
+      - grafana-data:/var/lib/grafana
+    expose:
+      - 3000
+    ports:
+      - "3000:3000"
+    networks:
+      - monitoring
+
+# Define the volumes.
+volumes:
+  pgdata:
+  prometheus-data: {}
+  grafana-data: {}
+
+networks:
+  monitoring:
+    driver: bridge

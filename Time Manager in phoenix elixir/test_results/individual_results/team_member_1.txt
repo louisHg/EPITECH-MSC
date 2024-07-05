@@ -1,0 +1,19 @@
+NAME: team_member_1
+
+URL = http://localhost:4000/auth/register
+Result = SUCCESS
+Response Details = 
+{
+    "details": {
+        "email": "tm1.tester@tester.tester",
+        "first_name": "Team Member 1",
+        "id": "875abef9-98f4-43d7-898a-3551ccd12d53",
+        "last_name": "Team Member 1",
+        "role": "Employee",
+        "username": "Team Member 1"
+    },
+    "name": "team_member_1",
+    "status_code": 200,
+    "success": true,
+    "url": "http://localhost:4000/auth/register"
+}

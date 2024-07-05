@@ -1,0 +1,114 @@
+---
+-  hosts: web
+   become: yes
+   gather_facts: true
+   tasks:
+     - name: symfony
+       become: yes 
+       command: echo  'deb [trusted=yes]https://repo.symfony.com/apt/ /'|tee/etc/apt/sources.llist.d/symfony-cli.list
+
+     - name: apt update
+       become: yes
+       apt:
+         update_cache: yes
+         upgrade: yes
+
+     - name: install package
+       become: yes
+       apt: 
+         name: "{{ item }}"
+       with_items:
+         - apache2
+         - nginx
+         - php-cli
+         - php-symfony
+         - composer
+         - git
+         - symfony-cli
+
+     - name: Create a directory if it not exist
+       become: yes
+       ansible.builtin.file:
+         path: /var/www/app
+         state: directory
+         mode: '0755'
+
+     - name: check
+       become: yes
+       find: 
+         paths: '/var/www/app'
+       register: filesFound
+
+     - name: git clone project to remote
+       become: yes
+       git:
+         repo: https://github.com/louisHg/EpidCavalry.git
+         dest: /var/www/app
+#         single_branch: yes
+#         version: master
+         force: yes
+         clone: yes
+       when: filesFound.matched == 0
+
+     - name: pull
+       become: yes
+       git:
+         repo: https://github.com/louisHg/EpidCavalry.git
+         dest: /var/www/app
+         update: yes
+         force: yes
+       when: filesFound.matched != 0
+
+     - name: update
+       become: yes
+       shell:
+         sudo apt -y update
+     
+     - name: install software properties
+       become: yes
+       shell:
+         sudo apt -y install curl software-properties-common gnupg2
+
+     - name: upgrade
+       become: yes
+       shell: 
+         sudo apt -y upgrade
+    
+     - name:
+       become: yes
+       shell:
+         curl -LsS -O https://downloads.mariadb.com/MariaDB/mariadb_repo_setup
+
+     - name:
+       become: yes
+       shell:
+         sudo bash mariadb_repo_setup --mariadb-server-version=10.5
+
+     - name: update
+       become: yes
+       shell:
+         sudo apt update
+
+     - name: install mariaDB
+       become: yes
+       shell:
+         sudo apt -y install mariadb-server mariadb-client
+
+     - name: start mariadb
+       service:
+         name: mariadb
+         enabled: true 
+         state: started
+
+     - name: set root password mariadb
+       mysql_user:
+         check_implicit_admin: true 
+         login_user: root
+         login_password: "root"
+         user: root
+         password: "root"
+         host: localhost
+
+     - name: deploy php
+       become: yes
+       command: chdir=ecommerce php -S 169.254.6.236:8000 -t public

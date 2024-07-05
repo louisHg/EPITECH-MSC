@@ -1,0 +1,19 @@
+NAME: update_user_role
+
+URL = http://localhost:4000/api/users/d41a0131-d02d-418c-b92d-bc3753da15f9/update-role
+Result = SUCCESS
+Response Details = 
+{
+    "details": {
+        "email": "modified.tester@tester.tester",
+        "first_name": "Modified User",
+        "id": "d41a0131-d02d-418c-b92d-bc3753da15f9",
+        "last_name": "Modified User",
+        "role": "Manager",
+        "username": "Modified User"
+    },
+    "name": "update_user_role",
+    "status_code": 200,
+    "success": true,
+    "url": "http://localhost:4000/api/users/d41a0131-d02d-418c-b92d-bc3753da15f9/update-role"
+}

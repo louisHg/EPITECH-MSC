@@ -1,0 +1,17 @@
+NAME: update_working_time
+
+URL = http://localhost:4000/api/workingtimes/09329237-b3bd-47ee-9dd0-6e90b9da63bf
+Result = SUCCESS
+Response Details = 
+{
+    "details": {
+        "end": "2022-11-25T17:30:00",
+        "id": "09329237-b3bd-47ee-9dd0-6e90b9da63bf",
+        "start": "2022-10-25T09:00:00",
+        "user_id": "d41a0131-d02d-418c-b92d-bc3753da15f9"
+    },
+    "name": "update_working_time",
+    "status_code": 200,
+    "success": true,
+    "url": "http://localhost:4000/api/workingtimes/09329237-b3bd-47ee-9dd0-6e90b9da63bf"
+}

@@ -1,0 +1,12 @@
+NAME: delete_user
+
+URL = http://localhost:4000/api/users/3b5870ef-2ad5-4ea4-ba31-06b71b665e4f
+Result = SUCCESS
+Response Details = 
+{
+    "details": "User succesfully deleted",
+    "name": "delete_user",
+    "status_code": 200,
+    "success": true,
+    "url": "http://localhost:4000/api/users/3b5870ef-2ad5-4ea4-ba31-06b71b665e4f"
+}

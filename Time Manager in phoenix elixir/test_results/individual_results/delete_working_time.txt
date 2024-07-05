@@ -1,0 +1,17 @@
+NAME: delete_working_time
+
+URL = http://localhost:4000/api/workingtimes/9672bd9c-4f36-42cc-9567-25c8e4e4c1cc
+Result = SUCCESS
+Response Details = 
+{
+    "details": {
+        "end": "2020-11-06T17:30:00",
+        "id": "9672bd9c-4f36-42cc-9567-25c8e4e4c1cc",
+        "start": "2020-11-06T09:30:00",
+        "user_id": "d41a0131-d02d-418c-b92d-bc3753da15f9"
+    },
+    "name": "delete_working_time",
+    "status_code": 200,
+    "success": true,
+    "url": "http://localhost:4000/api/workingtimes/9672bd9c-4f36-42cc-9567-25c8e4e4c1cc"
+}

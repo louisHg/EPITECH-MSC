@@ -1,0 +1,19 @@
+NAME: get_user_by_params
+
+URL = http://localhost:4000/api/users?email=tester.tester@tester.tester&username=Testing User
+Result = SUCCESS
+Response Details = 
+{
+    "details": {
+        "email": "tester.tester@tester.tester",
+        "first_name": "Testing User",
+        "id": "d41a0131-d02d-418c-b92d-bc3753da15f9",
+        "last_name": "Testing User",
+        "role": "Employee",
+        "username": "Testing User"
+    },
+    "name": "get_user_by_params",
+    "status_code": 200,
+    "success": true,
+    "url": "http://localhost:4000/api/users?email=tester.tester@tester.tester&username=Testing User"
+}

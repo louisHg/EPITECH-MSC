@@ -1,0 +1,27 @@
+Results of the tests: 
+
+successful_user = SUCCESSFUL
+login = SUCCESSFUL
+get_user_by_id = SUCCESSFUL
+get_user_by_params = SUCCESSFUL
+update_user = SUCCESSFUL
+update_user_role = SUCCESSFUL
+add working_time 1 = SUCCESSFUL
+get_all_user_working_time = SUCCESSFUL
+update_working_time = SUCCESSFUL
+delete_working_time = SUCCESSFUL
+get_user_clock = SUCCESSFUL
+clock_in = SUCCESSFUL
+clock_out = SUCCESSFUL
+get_all_users = SUCCESSFUL
+create_team = SUCCESSFUL
+add_manager_to_team = SUCCESSFUL
+remove_team_member_1 = SUCCESSFUL
+get_user_presence = SUCCESSFUL
+get_team_presence = SUCCESSFUL
+delete_team = SUCCESSFUL
+delete_user = SUCCESSFUL
+
+Number of tests = 21
+Number of success = 21
+Number of fails = 0

@@ -1,0 +1,2 @@
+[web]
+louis@10.26.106.23 ansible_ssh_pass=root ansible_ssh_user=louis

@@ -1,0 +1,38 @@
+NAME: get_user_presence
+
+URL = http://localhost:4000/api/stats/user/d41a0131-d02d-418c-b92d-bc3753da15f9?startDate=2022-07-01 09:00:00&endDate=2022-11-10 17:30:00
+Result = SUCCESS
+Response Details = 
+{
+    "details": {
+        "average_per_day": 916500,
+        "endDate": "2022-11-10 17:30:00",
+        "startDate": "2022-07-01 09:00:00",
+        "total_worked": 2749500,
+        "user_id": "d41a0131-d02d-418c-b92d-bc3753da15f9",
+        "working_time": [
+            {
+                "end": "2022-11-04T17:30:00",
+                "id": "30b8d015-ece7-4d2f-bebf-5d6ce0aab3dd",
+                "start": "2022-11-04T09:45:00",
+                "user_id": "d41a0131-d02d-418c-b92d-bc3753da15f9"
+            },
+            {
+                "end": "2022-11-05T12:30:00",
+                "id": "8162e919-da0c-4932-83db-dbd598310f20",
+                "start": "2022-11-05T09:00:00",
+                "user_id": "d41a0131-d02d-418c-b92d-bc3753da15f9"
+            },
+            {
+                "end": "2022-11-25T17:30:00",
+                "id": "09329237-b3bd-47ee-9dd0-6e90b9da63bf",
+                "start": "2022-10-25T09:00:00",
+                "user_id": "d41a0131-d02d-418c-b92d-bc3753da15f9"
+            }
+        ]
+    },
+    "name": "get_user_presence",
+    "status_code": 200,
+    "success": true,
+    "url": "http://localhost:4000/api/stats/user/d41a0131-d02d-418c-b92d-bc3753da15f9?startDate=2022-07-01 09:00:00&endDate=2022-11-10 17:30:00"
+}
