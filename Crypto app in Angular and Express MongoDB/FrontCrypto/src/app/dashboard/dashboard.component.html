@@ -1,0 +1,57 @@
+<div class="container-fluid page">
+    <div class="page_box p-3 mt-2">Profil Utilisateur</div>
+    <div class="page_content shadow p-3 position-relative">
+
+      <div class="page_content-data" *ngIf="!connected">
+        <a href="Log?Log=1">
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Connexion</span>
+          </button>
+        </a>
+        <p class="alerte">Vous n'êtes connecté à aucun compte, veuillez vous connecter avant l'accès à votre profil.</p>
+      </div>
+
+      <div class="page_content-data" *ngIf="connected">
+        <div class="main-div">
+          <mat-card class="card">
+            <mat-card-header>
+              <div mat-card-avatar>
+                <img src="../../assets/user.png" class="header-image">
+              </div>
+              <mat-card-title>{{ userData["username"] }}</mat-card-title>
+              <mat-card-subtitle>Adresse mail : {{ userData["mail"] }}</mat-card-subtitle>
+              <mat-card-subtitle>Téléphone :{{ userData["telephone"] }}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content *ngIf="userData['badges'].length == 0 ">
+              Badges :<br>
+              Vous n'avez aucun badge
+            </mat-card-content>
+            <mat-card-content *ngIf="userData['badges'].length != 0 ">
+              Badges :<br>
+              <div *ngFor="let badge of userData['badges']">{{ badge }}</div>
+            </mat-card-content>
+            <mat-card-content *ngIf="userData['transactions'].length == 0 ">
+              Transactions :<br>
+              Vous n'avez aucun achat effectué
+            </mat-card-content>
+            <mat-card-content *ngIf="userData['transactions'].length != 0 ">
+              Transactions :<br>
+              <div *ngFor="let transac of transactions;let i = index">{{ transac }}</div>
+            </mat-card-content>
+            <mat-card-content *ngIf="userData['favorites'].length == 0 ">
+              Favoris :<br>
+              Vous n'avez aucun favoris
+            </mat-card-content>
+            <mat-card-content *ngIf="userData['favorites'].length != 0 ">
+              Favoris :<br>
+              <div *ngFor="let fan of favoris;let i = index">{{ fan.name }}</div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+
+    </div>
+</div>

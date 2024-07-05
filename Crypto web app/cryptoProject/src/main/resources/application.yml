@@ -1,0 +1,20 @@
+server:
+  servlet:
+    context-path: "/cryptopedia"
+  port: 8081
+spring:
+  application:
+    name: cryptoProject
+  datasource:
+    url: jdbc:postgresql://localhost:5432/crypto_db
+    password: postgres
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  sql:
+    init:
+      data-locations: classpath:data.sql
+      mode: embedded
+jwt:
+  secret: PxG6btQ6H76WqlKaqRfc6yWan8XaMDz5AHTRChiX2qm5GQfDVfsA2oR2WjvynCt

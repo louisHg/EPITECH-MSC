@@ -1,0 +1,25 @@
+ <div class="crypto ">
+    Rentrer une crypto : <input type="text" name="crypto" [(ngModel)]="selectedItem">
+  </div>
+  <table class="center ">
+    <tr>
+      <th class="w5">Rang</th>
+      <th class="w10">Symbole</th>
+      <th class="w20">Prix</th>
+      <th class="w10">différence de prix(24h) </th>
+      <th class="w10">en % </th>
+      <th class="w20">Market cap </th>
+      <th>delete</th>
+    </tr>
+    <tr *ngFor="let fav of favoris;let y = index">
+      <ng-container   *ngFor="let elem of json; let i = index">
+        <td *ngIf="json[i].uuid == favoris[y].uuid">{{json[i].rank}}</td>
+        <td *ngIf="json[i].uuid == favoris[y].uuid">{{json[i].symbol}}</td>
+        <td *ngIf="json[i].uuid == favoris[y].uuid">{{json[i].price}}</td>
+        <td *ngIf="json[i].uuid == favoris[y].uuid">{{json[i].priceDiffInfos.flat}}</td>
+        <td *ngIf="json[i].uuid == favoris[y].uuid">{{json[i].priceDiffInfos.percentage}}</td>
+        <td *ngIf="json[i].uuid == favoris[y].uuid">{{json[i].marketCap}}</td>
+        <td *ngIf="json[i].uuid == favoris[y].uuid"><button (click)="delFavoris(json[i].uuid)">-</button></td>
+      </ng-container >
+    </tr>
+  </table> 

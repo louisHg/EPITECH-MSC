@@ -1,0 +1,32 @@
+version: '3'
+services:
+  control_node:
+    build:
+      context: .
+      dockerfile: ./Images/Control_Node/debian_11.Dockerfile
+    container_name: Control_Node
+    working_dir: /root/Nodes_Share
+    volumes:
+      - ../Nodes_Share:/root/Nodes_Share
+      - ../ansible:/etc/ansible
+    command: tail -f /dev/null
+
+  managed_node_db:
+    build:
+      context: .
+      dockerfile: ./Images/Managed_Nodes/debian_11.Dockerfile
+    container_name: Managed_Node_DB
+
+    
+  managed_node_back:
+    build:
+      context: .
+      dockerfile: ./Images/Managed_Nodes/debian_11.Dockerfile
+    container_name: Managed_Node_Back
+
+
+  managed_node_front:
+    build:
+      context: .
+      dockerfile: ./Images/Managed_Nodes/debian_11.Dockerfile
+    container_name: Managed_Node_Front

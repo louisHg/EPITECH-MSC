@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    margin-top: 10px;
+}
+
+.mainPage{
+    display: flex;
+    flex-direction: column;
+}
+
+.Crypto{
+    display: flex;
+}
+.Youtube{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.Reddit{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}

@@ -1,0 +1,23 @@
+.frontpage{
+    border: 1px solid black;
+    height: 361px;
+    width:fit-content;
+    overflow-y: auto;
+    background-color: #3d3d3d;
+    align-self: start;
+}
+
+.thread{
+    color: white;
+    margin: 5px;
+    background-color: #5d5d5d;
+}
+.thread:hover{
+    background-color: lightblue;
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: #6d6d6d;
+}
+.subTitle{
+    color: white;
+}

@@ -1,0 +1,26 @@
+version: '3.6'
+services:
+  web:
+    container_name: "Gitlab"
+    build: .
+    restart: always
+    hostname: "epilab.nsa.com"
+    ports:
+      - '80:80'
+      - '443:443'
+      - '22:22'
+
+    volumes:
+      - './gitlab/config:/etc/gitlab'
+      - './gitlab/logs:/var/log/gitlab'
+      - './gitlab/data:/var/opt/gitlab'
+      - './ansible:/ansible'
+    
+    shm_size: '256m'
+  
+  gitlab-runner:
+    image: gitlab/gitlab-runner:alpine
+    restart: always
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock'
+      - './gitlab-runner:/etc/gitlab-runner'

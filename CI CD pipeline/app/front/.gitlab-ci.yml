@@ -1,0 +1,42 @@
+
+build-job: 
+  stage: build
+  image: node:12
+  script: 
+    - echo "Trying to build the app."
+    - npm install
+    - npm install -g @angular/cli@7.1.4
+    - yarn install
+    - ng build 
+  artifacts:
+    paths:
+      - ./
+    name: "front_end_deps"
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push"
+
+test-job:
+  allow_failure: true
+  image: weltn24/up-docker-node-chrome-headless
+  stage: test
+  script: 
+    - echo "Tring to launch tests"
+    - curl -sL https://deb.nodesource.com/setup_12.x | bash -
+    - apt install nodejs
+    - npm install
+    - npm install -g @angular/cli@7.1.4
+    - yarn install
+    - npm install -g protractor
+    #- npm install chromedriver --chromedriver_version=100.0.4896.60
+    - ng test
+    - ng e2e
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push"
+
+
+deploy-prod:
+  stage: deploy
+  script: 
+    - echo "Trying to deploy from $CI_COMMIT_BRANCH."
+  environment: production
+  when: manual

@@ -1,0 +1,46 @@
+- name: Install dependencies
+  hosts: Managed_Nodes
+  tasks:
+     # ensure that we can connect to hosts
+    - name: Ping my hosts
+      ansible.builtin.ping:
+- name: Install Front dependencies
+  hosts: Managed_Node_Front
+  tasks:
+    - name: Install Node Js
+      ansible.builtin.apt:
+        name: nodejs
+        state: present
+        update_cache: yes
+#    - name: Install "angular cli" node.js package
+#      npm:
+#        name: 'angular/cli'
+#        version: '7.1.4'
+#        path: /
+
+# composer artisan -> back
+
+#vars:
+#  nodejs_version: "12.21.0"
+#  npm_packages: ...
+#
+#tasks:
+#  - name: Discover npm binaries directory
+#    ansible.builtin.command:
+#      cmd: >
+#        bash -c "source $HOME/.nvm/nvm.sh &&
+#        nvm exec --silent {{ nodejs_version }} npm bin -g"
+#    register: npm_bin_result
+#    changed_when: false
+#
+#  - name: Set npm binaries directory
+#    ansible.builtin.set_fact:
+#      npm_binaries_dir: "{{ npm_bin_result.stdout }}"
+#
+#  - name: Install global npm packages
+#    ansible.builtin.command:
+#      cmd: >
+#        bash -c "source $HOME/.nvm/nvm.sh &&
+#        nvm exec {{ nodejs_version }} npm install -g {{ item }}"
+#      creates: "{{ npm_binaries_dir }}/{{ item }}"
+#    loop: "{{ npm_packages }}"

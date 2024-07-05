@@ -1,0 +1,43 @@
+image: php:7.1.8
+
+cache:
+  paths:
+    - vendor/
+    - .env
+
+build:
+  stage: build
+  script:
+    - apt-get update --force-yes
+    - apt-get install -y zip unzip ansible --force-yes
+    - apt-get install -y git nodejs libcurl4-gnutls-dev libicu-dev libmcrypt-dev libvpx-dev libjpeg-dev libpng-dev libxpm-dev zlib1g-dev libfreetype6-dev libxml2-dev libexpat1-dev libbz2-dev libgmp3-dev libldap2-dev unixodbc-dev libpq-dev libsqlite3-dev libaspell-dev libsnmp-dev libpcre3-dev libtidy-dev --force-yes
+    - docker-php-ext-install mbstring pdo_mysql curl json intl gd xml zip bz2 opcache
+    - curl -sS https://getcomposer.org/installer | php
+    - php composer.phar update
+    - php composer.phar install
+    - cp .env.example .env
+  artifacts:
+    paths:
+      - vendor/
+      - .env
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push"
+
+services:
+  - mysql:5.7
+
+test:
+  stage: test
+  dependencies:
+    - build
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push"
+  script:
+    - php vendor/bin/phpunit --coverage-text --colors=never
+    - php nohup artisan serve &
+
+deploy:
+  stage: deploy
+  script: echo "Define your deployment script!"
+  environment: production
+  when: manual

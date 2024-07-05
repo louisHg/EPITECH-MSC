@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "chart.js": "^3.8.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "jade": "^1.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.6.0",
+    "morgan": "^1.10.0",
+    "ng2-charts": "^4.0.0",
+    "node-schedule": "^2.1.0",
+    "nodemon": "^2.0.19"
+  }
+}

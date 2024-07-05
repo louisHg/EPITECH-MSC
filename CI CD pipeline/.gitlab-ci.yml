@@ -1,0 +1,35 @@
+#stages:
+#  - build
+#  - test
+#  - deploy
+
+#build: 
+#  stage: build
+#  script: 
+#    - 
+#  artifacts: 
+#    paths:
+#      - my_build.pdf
+#    expire_in: 1 week
+    
+build-job: 
+  stage: build
+  script: 
+    - echo "Hello, $GITLAB_USER_LOGIN"
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push"
+
+test-job:
+  stage: test
+  script: 
+    - echo "This job test something"
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push"
+
+
+deploy-prod: 
+  stage: deploy
+  script: 
+    - echo "This job deploys something from the $CI_COMMIT_BRANCH."
+  environment: production
+  when: manual

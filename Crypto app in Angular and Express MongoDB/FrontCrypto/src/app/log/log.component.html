@@ -1,0 +1,124 @@
+<div *ngIf="Log == 1">
+  <div class="container-fluid page">
+    <div class="page_box p-3 mt-2">Connexion :</div>
+    <div class="page_content shadow p-3 position-relative">
+      <div class="page_content-data">
+        <div class="container">
+          <form [formGroup]="angForm" novalidate>
+            <div class="user-details">
+              <div class="input-box">
+                <input type="text" autofocus placeholder="Nom d'utilisateur" name="User" formControlName="user" autofocus required ngModel
+                #user>
+                <div *ngIf="angForm.controls['user'].invalid && (angForm.controls['user'].dirty || angForm.controls['user'].touched)" class="alerte">
+                  <div *ngIf="angForm.controls['user'].errors.required">
+                  Un nom d'utilisateur est requis.
+                  </div>
+                </div>
+              </div>
+              <div class="input-box">
+                <input type="password" placeholder="Mot de passe" name="Mdp" minlength="6" formControlName="pass" required ngModel
+                #pass>
+                <div *ngIf="angForm.controls['pass'].invalid && (angForm.controls['pass'].dirty || angForm.controls['pass'].touched)" class="alerte">
+                  <div *ngIf="angForm.controls['pass'].errors.required">
+                  Mot de passe requis.
+                  </div>
+                  <div *ngIf="angForm.controls['pass'].errors.minlength">Tips de pro: votre mot de passe fait au minimum 6 caractères</div>
+                </div>  
+              </div>
+            </div>
+            <p>Vous n'avez pas de compte? Enregistrer-vous <a href="Log?&Log=0">Ici</a></p><br>
+            <div class="button">
+              <input type = "submit" 
+              value = "Connexion" 
+              (click) = "ConnexionSubmit(user.value, pass.value)" >
+            </div>
+          </form>
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+
+<div *ngIf="Log == 0">
+  <div class="container-fluid page">
+    <div class="page_box p-3 mt-2">Inscription :</div>
+    <div class="page_content shadow p-3 position-relative">
+        <div class="page_content-data">
+          <div class="container">
+            <form [formGroup]="angForm" novalidate>
+              <div class="user-details">
+                <div class="input-box">
+                  <input
+                    type="text"
+                    autofocus required
+                    placeholder="Nom d'utilisateur"
+                    name="user"
+                    formControlName="user" 
+                    ngModel
+                    #user>
+                  <div *ngIf="angForm.controls['user'].invalid && (angForm.controls['user'].dirty || angForm.controls['user'].touched)" class="alerte">
+                    <div *ngIf="angForm.controls['user'].errors.required">
+                    Un nom d'utilisateur est requis.
+                    </div>
+                  </div>
+                </div>
+                <div class="input-box">
+                  <input
+                    type="email"
+                    autofocus required
+                    placeholder="Email"
+                    name="email"
+                    ngModel
+                    formControlName="email" 
+                    #email>
+                  <div *ngIf="angForm.controls['email'].invalid && (angForm.controls['email'].dirty || angForm.controls['email'].touched)" class="alerte">
+                    <div *ngIf="angForm.controls['email'].errors.required">
+                    Une adresse Email est requise.
+                    </div>
+                    <div *ngIf="angForm.controls['email'].errors.email">L'adresse mail doit être une adresse valide</div>
+                  </div>
+                </div>
+                <div class="input-box">
+                  <input
+                    type="password"
+                    autofocus required
+                    placeholder="Mot de passe"
+                    name="pass"
+                    formControlName="pass" 
+                    ngModel
+                    #pass>
+                  <div *ngIf="angForm.controls['pass'].invalid && (angForm.controls['pass'].dirty || angForm.controls['pass'].touched)" class="alerte">
+                    <div *ngIf="angForm.controls['pass'].errors.required">
+                    Mot de passe requis.
+                    </div>
+                    <div *ngIf="angForm.controls['pass'].errors.minlength">Le mot de passe doit faire au minimum 6 caractères </div>
+                  </div>        
+                </div>
+                <div class="input-box">
+                  <input 
+                    type="tel"
+                    autofocus required 
+                    placeholder="N° de téléphone" 
+                    name="tel" 
+                    ngModel 
+                    formControlName="tel" 
+                    #tel>
+                  <div *ngIf="angForm.controls['tel'].invalid && (angForm.controls['tel'].dirty || angForm.controls['tel'].touched)" class="alerte">
+                    <div *ngIf="angForm.controls['tel'].errors.required">
+                    Votre numéro de téléphone est requis.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p>Vous possèdez déjà un compte? Cliquer <a href="Log?&Log=1">Ici</a></p><br>
+              <div class="button">
+                <input type = "submit"
+                value = "S'enregistrer" 
+                (click) ="onClickSubmit(user.value, pass.value, tel.value , email.value)" >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

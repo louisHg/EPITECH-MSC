@@ -1,0 +1,545 @@
+{
+	"info": {
+		"_postman_id": "40ab493b-dc09-4108-8acc-14640c91589d",
+		"name": "Cryptopedia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18839432"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"toto@epitech.eu\",\n    \"password\": \"toto\",\n    \"username\": \"toto\",\n    \"role\": \"ADMIN\",\n    \"firstName\": \"toto\",\n    \"lastName\": \"toto\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/cryptopedia/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cryptopedia",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"admin@admin.com\",\n    \"password\": \"admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/cryptopedia/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cryptopedia",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Coins",
+			"item": [
+				{
+					"name": "save coins",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b3RvQGVwaXRlY2guZXUiLCJpYXQiOjE2NzMyNTQ2NTAsInJvbGUiOiJBRE1JTiJ9.ZAUP002qaxbJDkhMd3pRnspLHpRrbkoKJDyIXRIo9Hg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"id\": 1,\n        \"name\": \"BTC\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"ETH\"\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/cryptopedia/coins",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cryptopedia",
+								"coins"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get coins",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/cryptopedia/coins",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cryptopedia",
+								"coins"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get coin by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/cryptopedia/coins/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cryptopedia",
+								"coins",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete coins",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"id\": 1,\n        \"name\": \"BTC\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"ETH\"\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/cryptopedia/coins",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cryptopedia",
+								"coins"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Handle users",
+			"item": [
+				{
+					"name": "Update User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uuid\": \"44f69790-ac5a-4a00-92aa-6b92bef17cc1\",\r\n    \"email\": \"toto@epitech.eu\",\r\n    \"password\": \"toto\",\r\n    \"username\": \"toto\",\r\n    \"role\": \"ADMIN\",\r\n    \"firstName\": \"toto\",\r\n    \"lastName\": \"toto\",\r\n    \"createdAt\": \"2022-12-05T11:48:02.913Z\",\r\n    \"updatedAt\": \"2022-12-05T11:48:02.913Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/cryptopedia/user/updateUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cryptopedia",
+								"user",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/cryptopedia/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cryptopedia",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/cryptopedia/user/:user_id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cryptopedia",
+								"user",
+								":user_id"
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": "9beb8693-33d2-45a3-a2fb-cc36a57df5c7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete users list",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    \"7ef5de44-5f00-43e3-b130-076841fe3f96\",\r\n    \"1591c1be-b5d1-4b46-a405-093cd556f80d\"\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/cryptopedia/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cryptopedia",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "preferences",
+			"item": [
+				{
+					"name": "Get all preferences",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/cryptopedia/preferences",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cryptopedia",
+								"preferences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get references by User Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b3RvQGVwaXRlY2guZXUiLCJpYXQiOjE2NzMyNTQ2NTAsInJvbGUiOiJBRE1JTiJ9.ZAUP002qaxbJDkhMd3pRnspLHpRrbkoKJDyIXRIo9Hg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/cryptopedia/preferences/:user_id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cryptopedia",
+								"preferences",
+								":user_id"
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": "d100f19d-539b-486a-bb97-4614be45766c"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save preferences in database",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b3RvQGVwaXRlY2guZXUiLCJpYXQiOjE2NzMyNTQ2NTAsInJvbGUiOiJBRE1JTiJ9.ZAUP002qaxbJDkhMd3pRnspLHpRrbkoKJDyIXRIo9Hg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"id\": 0,\r\n    \"userId\": \"d100f19d-539b-486a-bb97-4614be45766c\",\r\n    \"articleId\": null,\r\n    \"coinId\": 1,\r\n    \"createdAt\": \"2022-12-24T15:16:38.330Z\",\r\n    \"updatedAt\": \"2022-12-24T15:16:38.330Z\"\r\n  }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/cryptopedia/preferences",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cryptopedia",
+								"preferences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete preferences in database",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"id\": 6,\r\n    \"userId\": \"d100f19d-539b-486a-bb97-4614be45766c\",\r\n    \"articleId\": 0,\r\n    \"coinId\": 0,\r\n    \"createdAt\": \"2022-12-19T17:11:00.260Z\",\r\n    \"updatedAt\": \"2022-12-19T17:11:00.260Z\"\r\n  }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/cryptopedia/preferences",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cryptopedia",
+								"preferences"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Articles",
+			"item": [
+				{
+					"name": "get articles",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE2NzMzNDc4NDYsInJvbGUiOiJBRE1JTiJ9.rV7X6Xd4PAr0mcSt3NLADOg-1a2xnXsAOHFSXxXmHeE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/cryptopedia/articles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cryptopedia",
+								"articles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get articles by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/cryptopedia/articles/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cryptopedia",
+								"articles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save articles",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE2NzMzNDc4NDYsInJvbGUiOiJBRE1JTiJ9.rV7X6Xd4PAr0mcSt3NLADOg-1a2xnXsAOHFSXxXmHeE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"id\": 0,\r\n        \"url\": \"caca2\",\r\n        \"name\": \"caca2\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/cryptopedia/articles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cryptopedia",
+								"articles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/cryptopedia/articles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cryptopedia",
+								"articles"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

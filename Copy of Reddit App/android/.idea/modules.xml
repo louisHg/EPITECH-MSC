@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/redditest.iml" filepath="$PROJECT_DIR$/.idea/modules/redditest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/redditest.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/redditest.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1902153307/redditest.react-native-app-auth.iml" filepath="$PROJECT_DIR$/.idea/modules/-1902153307/redditest.react-native-app-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1116108930/redditest.react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/1116108930/redditest.react-native-community_masked-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-895288683/redditest.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/-895288683/redditest.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-727596610/redditest.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/-727596610/redditest.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1355978582/redditest.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/1355978582/redditest.react-native-screens.iml" />
+    </modules>
+  </component>
+</project>

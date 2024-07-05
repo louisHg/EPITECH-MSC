@@ -1,0 +1,137 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.redditest"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->[com.facebook.flipper:flipper:0.99.0] /home/Maxence/.gradle/caches/transforms-3/df7b208c45426f45016d16c0c3a6a059/transformed/jetified-flipper-0.99.0/AndroidManifest.xml:16:5-76
+13-->[com.facebook.flipper:flipper:0.99.0] /home/Maxence/.gradle/caches/transforms-3/df7b208c45426f45016d16c0c3a6a059/transformed/jetified-flipper-0.99.0/AndroidManifest.xml:16:22-73
+14
+15    <queries>
+15-->[net.openid:appauth:0.8.1] /home/Maxence/.gradle/caches/transforms-3/b8ae41b7e1ef52fecc645126f051b36f/transformed/jetified-appauth-0.8.1/AndroidManifest.xml:26:5-34:15
+16        <intent>
+16-->[net.openid:appauth:0.8.1] /home/Maxence/.gradle/caches/transforms-3/b8ae41b7e1ef52fecc645126f051b36f/transformed/jetified-appauth-0.8.1/AndroidManifest.xml:27:9-33:18
+17            <action android:name="android.intent.action.VIEW" />
+17-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:24:13-65
+17-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:24:21-62
+18
+19            <category android:name="android.intent.category.BROWSABLE" />
+19-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:26:13-74
+19-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:26:23-71
+20
+21            <data android:scheme="https" />
+21-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:27:13-51
+21-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:27:19-49
+22        </intent>
+23    </queries>
+24
+25    <application
+25-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:6:5-30:19
+26        android:name="com.redditest.MainApplication"
+26-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:7:7-38
+27        android:allowBackup="false"
+27-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:11:7-34
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.6.0] /home/Maxence/.gradle/caches/transforms-3/9f18c6b50baa776d71894ad120630276/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+29        android:debuggable="true"
+30        android:icon="@mipmap/ic_launcher"
+30-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:9:7-41
+31        android:label="@string/app_name"
+31-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:8:7-39
+32        android:roundIcon="@mipmap/ic_launcher_round"
+32-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:10:7-52
+33        android:theme="@style/AppTheme"
+33-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:12:7-38
+34        android:usesCleartextTraffic="true" >
+34-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/debug/AndroidManifest.xml:8:9-44
+35        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+35-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/debug/AndroidManifest.xml:11:9-86
+35-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/debug/AndroidManifest.xml:11:19-83
+36        <activity
+36-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:13:7-29:18
+37            android:name="com.redditest.MainActivity"
+37-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:14:9-37
+38            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+38-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:16:9-86
+39            android:label="@string/app_name"
+39-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:15:9-41
+40            android:launchMode="singleTask"
+40-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:17:9-40
+41            android:windowSoftInputMode="adjustResize" >
+41-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:18:9-51
+42            <intent-filter>
+42-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:19:9-22:25
+43                <action android:name="android.intent.action.MAIN" />
+43-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:20:13-65
+43-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:20:21-62
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:21:13-73
+45-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:21:23-70
+46            </intent-filter>
+47            <intent-filter>
+47-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:23:9-28:25
+48                <action android:name="android.intent.action.VIEW" />
+48-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:24:13-65
+48-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:24:21-62
+49
+50                <category android:name="android.intent.category.DEFAULT" />
+50-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:25:13-72
+50-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:25:23-69
+51                <category android:name="android.intent.category.BROWSABLE" />
+51-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:26:13-74
+51-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:26:23-71
+52
+53                <data android:scheme="com.redditest" />
+53-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:27:13-51
+53-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:27:19-49
+54            </intent-filter>
+55        </activity>
+56        <activity
+56-->[net.openid:appauth:0.8.1] /home/Maxence/.gradle/caches/transforms-3/b8ae41b7e1ef52fecc645126f051b36f/transformed/jetified-appauth-0.8.1/AndroidManifest.xml:37:9-41:75
+57            android:name="net.openid.appauth.AuthorizationManagementActivity"
+57-->[net.openid:appauth:0.8.1] /home/Maxence/.gradle/caches/transforms-3/b8ae41b7e1ef52fecc645126f051b36f/transformed/jetified-appauth-0.8.1/AndroidManifest.xml:38:13-78
+58            android:exported="false"
+58-->[net.openid:appauth:0.8.1] /home/Maxence/.gradle/caches/transforms-3/b8ae41b7e1ef52fecc645126f051b36f/transformed/jetified-appauth-0.8.1/AndroidManifest.xml:39:13-37
+59            android:launchMode="singleTask"
+59-->[net.openid:appauth:0.8.1] /home/Maxence/.gradle/caches/transforms-3/b8ae41b7e1ef52fecc645126f051b36f/transformed/jetified-appauth-0.8.1/AndroidManifest.xml:40:13-44
+60            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+60-->[net.openid:appauth:0.8.1] /home/Maxence/.gradle/caches/transforms-3/b8ae41b7e1ef52fecc645126f051b36f/transformed/jetified-appauth-0.8.1/AndroidManifest.xml:41:13-72
+61        <activity
+61-->[net.openid:appauth:0.8.1] /home/Maxence/.gradle/caches/transforms-3/b8ae41b7e1ef52fecc645126f051b36f/transformed/jetified-appauth-0.8.1/AndroidManifest.xml:42:9-53:20
+62            android:name="net.openid.appauth.RedirectUriReceiverActivity"
+62-->[net.openid:appauth:0.8.1] /home/Maxence/.gradle/caches/transforms-3/b8ae41b7e1ef52fecc645126f051b36f/transformed/jetified-appauth-0.8.1/AndroidManifest.xml:43:13-74
+63            android:exported="true" >
+63-->[net.openid:appauth:0.8.1] /home/Maxence/.gradle/caches/transforms-3/b8ae41b7e1ef52fecc645126f051b36f/transformed/jetified-appauth-0.8.1/AndroidManifest.xml:44:13-36
+64            <intent-filter>
+64-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:23:9-28:25
+65                <action android:name="android.intent.action.VIEW" />
+65-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:24:13-65
+65-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:24:21-62
+66
+67                <category android:name="android.intent.category.DEFAULT" />
+67-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:25:13-72
+67-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:25:23-69
+68                <category android:name="android.intent.category.BROWSABLE" />
+68-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:26:13-74
+68-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:26:23-71
+69
+70                <data android:scheme="com.redditest" />
+70-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:27:13-51
+70-->/home/Maxence/T-DEV-600-LIL-6-1-redditech-maxence.marqui/android/app/src/main/AndroidManifest.xml:27:19-49
+71            </intent-filter>
+72        </activity>
+73    </application>
+74
+75</manifest>

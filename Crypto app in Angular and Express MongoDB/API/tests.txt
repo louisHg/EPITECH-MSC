@@ -1,0 +1,27 @@
+    //await updateCoinData(client, "Qwsogvtv82FCd", "24h")
+    //await updateCoinData(client, "razxDUgYGNAdQ", "24h")
+    
+    //var diff = await priceDiff(client, "razxDUgYGNAdQ", "razxDUgYGNAdQ")
+    //console.log(diff)
+
+    /*user_id = await createUserData(client, {
+      "username":"Maximus",
+      "password":"Password",
+      "favorites":["1stCoin"],
+      "createdAt":"31 mai 2022",
+      "transactions":{
+        "1stCoin":[{"timestamp":"10", "amount":1,"price":10.1 },{"timestamp":"11", "amount":2,"price":20.2 }],
+        "2ndCoin":[{"timestamp":"15", "amount":10,"price":0.2 }]
+      }
+    })
+    await addUserTransaction(client, user_id, {"uuid":"1stCoin", "timestamp":"12", "amount":3,"price":30.3})
+    await readUserTransactions(client, user_id)
+    await addUserTransaction(client, user_id, {"uuid":"3rdCoin", "timestamp":"20", "amount":100,"price":100})
+    await readUserTransactions(client, user_id)
+    await removeUserTransaction(client, user_id,{"uuid":"1stCoin","timestamp":"10", "amount":1,"price":10.1 })
+    await readUserTransactions(client, user_id)
+    await updateUserTransactions(client, user_id,{
+      "1stCoin":[{"timestamp":"10", "amount":1,"price":10.1 },{"timestamp":"11", "amount":2,"price":20.2 }],
+      "2ndCoin":[{"timestamp":"15", "amount":10,"price":0.2 }]
+    })
+    await readUserTransactions(client, user_id)*/

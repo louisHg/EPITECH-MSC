@@ -1,0 +1,6 @@
+localhost:9000/coins/singleCoin?uuid=ID_de_la_coin
+localhost:9000/coins/allCoins
+
+localhost:9000/notifications
+localhost:9000/marketData
+localhost:9000/FnG ==> oUI

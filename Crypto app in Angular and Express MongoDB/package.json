@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "daemon": "^1.1.0",
+    "node-schedule": "^2.1.0",
+    "nodemon": "^2.0.19"
+  },
+  "name": "t-yep-600-lil-6-1-finalproject-maxence.marqui",
+  "description": "-- -- # Projet CryptoStonk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EpitechMscProPromo2024/T-YEP-600-LIL-6-1-finalproject-maxence.marqui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EpitechMscProPromo2024/T-YEP-600-LIL-6-1-finalproject-maxence.marqui/issues"
+  },
+  "homepage": "https://github.com/EpitechMscProPromo2024/T-YEP-600-LIL-6-1-finalproject-maxence.marqui#readme"
+}

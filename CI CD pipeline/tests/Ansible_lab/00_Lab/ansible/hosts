@@ -1,0 +1,9 @@
+[Control_Nodes]
+Control_Node
+[Managed_Nodes]
+Managed_Node_DB
+Managed_Node_Back
+Managed_Node_Front
+[all:vars]
+ansible_ssh_user=root
+ansible_ssh_pass=root

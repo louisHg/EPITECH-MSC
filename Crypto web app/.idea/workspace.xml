@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e1d56d68-b4ee-473a-9b6c-af5d4187127b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/front-cryptopedia/src/view/RequireRole.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cryptopedia.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/Cryptopedia.postman_collection.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cryptoProject/src/main/java/com/epitech/cryptoProject/controllers/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cryptoProject/src/main/java/com/epitech/cryptoProject/controllers/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cryptoProject/src/main/java/com/epitech/cryptoProject/data/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/cryptoProject/src/main/java/com/epitech/cryptoProject/data/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cryptoProject/src/main/java/com/epitech/cryptoProject/data/Coin.java" beforeDir="false" afterPath="$PROJECT_DIR$/cryptoProject/src/main/java/com/epitech/cryptoProject/data/Coin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cryptoProject/src/main/java/com/epitech/cryptoProject/repositories/ArticlesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/cryptoProject/src/main/java/com/epitech/cryptoProject/repositories/ArticlesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cryptoProject/src/main/java/com/epitech/cryptoProject/services/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cryptoProject/src/main/java/com/epitech/cryptoProject/services/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cryptoProject/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cryptoProject/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-cryptopedia/src/component/admin/Source.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-cryptopedia/src/component/admin/Source.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-cryptopedia/src/component/rss/Feed.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-cryptopedia/src/component/rss/Feed.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-cryptopedia/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-cryptopedia/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-cryptopedia/src/service/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-cryptopedia/src/service/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-cryptopedia/src/view/Sideuser.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-cryptopedia/src/view/Sideuser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-cryptopedia/src/view/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-cryptopedia/src/view/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-cryptopedia/src/view/sideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-cryptopedia/src/view/sideBar.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="1" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/cryptoProject/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="2HYg5SZbdkE3ArC8GDi1kwvSipw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/JULES/Documents/Epitech/T-WEB-700-LIL_3/cryptoProject/src/main/resources/db/migration&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;2e91b542edff460ba2090a2bfe11233b&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cryptoProject/src/main/resources/db/migration" />
+      <recent name="$PROJECT_DIR$/cryptoProject/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cryptoProject/src/main/resources/mybatis/mappers" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.epitech.cryptoProject.controllers" />
+      <recent name="com.epitech.cryptoProject.services" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.epitech.cryptoProject.configuration" />
+      <recent name="com.epitech.cryptoProject.services" />
+      <recent name="com.epitech.cryptoProject.controllers" />
+      <recent name="com.epitech.cryptoProject.dtos" />
+      <recent name="com.epitech.cryptoProject.utils" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean test" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.com.epitech.cryptoProject in cryptoProject">
+    <configuration name="ArticleControllerTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="cryptoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epitech.cryptoProject.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epitech.cryptoProject.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.epitech.cryptoProject.controllers.ArticleControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PreferenceControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cryptoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epitech.cryptoProject.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epitech.cryptoProject.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.epitech.cryptoProject.controllers.PreferenceControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cryptoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epitech.cryptoProject.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epitech.cryptoProject.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.epitech.cryptoProject.controllers.UserControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.testUpdateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cryptoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epitech.cryptoProject.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epitech.cryptoProject.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.epitech.cryptoProject.controllers.UserControllerTest" />
+      <option name="METHOD_NAME" value="testUpdateUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.testDeleteUsersErrorIfIdEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cryptoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epitech.cryptoProject.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epitech.cryptoProject.services" />
+      <option name="MAIN_CLASS_NAME" value="com.epitech.cryptoProject.services.UserServiceTest" />
+      <option name="METHOD_NAME" value="testDeleteUsersErrorIfIdEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.epitech.cryptoProject in cryptoProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cryptoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epitech.cryptoProject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epitech.cryptoProject" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CryptoProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <module name="cryptoProject" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.epitech.cryptoProject.CryptoProjectApplication" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ArticleControllerTest" />
+      <item itemvalue="JUnit.PreferenceControllerTest" />
+      <item itemvalue="JUnit.UserControllerTest" />
+      <item itemvalue="JUnit.UserControllerTest.testUpdateUser" />
+      <item itemvalue="JUnit.UserServiceTest.testDeleteUsersErrorIfIdEmpty" />
+      <item itemvalue="JUnit.com.epitech.cryptoProject in cryptoProject" />
+      <item itemvalue="Spring Boot.CryptoProjectApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.com.epitech.cryptoProject in cryptoProject" />
+        <item itemvalue="JUnit.PreferenceControllerTest" />
+        <item itemvalue="JUnit.UserServiceTest.testDeleteUsersErrorIfIdEmpty" />
+        <item itemvalue="JUnit.UserControllerTest" />
+        <item itemvalue="JUnit.UserControllerTest.testUpdateUser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e1d56d68-b4ee-473a-9b6c-af5d4187127b" name="Changes" comment="" />
+      <created>1668467248081</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668467248081</updated>
+      <workItem from="1668467250792" duration="588000" />
+      <workItem from="1668468960436" duration="19106000" />
+      <workItem from="1668525570052" duration="6088000" />
+      <workItem from="1668958744246" duration="23562000" />
+      <workItem from="1669626254182" duration="25991000" />
+      <workItem from="1669753400932" duration="26000" />
+      <workItem from="1670230166585" duration="6850000" />
+      <workItem from="1670401217164" duration="43000" />
+      <workItem from="1670835476068" duration="13782000" />
+      <workItem from="1670925318921" duration="1379000" />
+      <workItem from="1672042616232" duration="105000" />
+      <workItem from="1672770839273" duration="703000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/T_WEB_700_LIL_3$CoinControllerTest.ic" NAME="CoinControllerTest Coverage Results" MODIFIED="1669675032510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.epitech.cryptoProject.controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/T_WEB_700_LIL_3$UserServiceTest.ic" NAME="UserServiceTest Coverage Results" MODIFIED="1672791297336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.epitech.cryptoProject.services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="../../../../Documents/Epitech/T-WEB-700-LIL_3/cryptoProject/target/jacoco.exec" NAME="jacoco.exec" MODIFIED="1670843592305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/T_WEB_700_LIL_3$AuthServiceTest.ic" NAME="AuthServiceTest Coverage Results" MODIFIED="1669129706669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.epitech.cryptoProject.services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/T_WEB_700_LIL_3$CoinServiceTest.ic" NAME="CoinServiceTest Coverage Results" MODIFIED="1669722719068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.epitech.cryptoProject.services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/T_WEB_700_LIL_3$AuthServiceTest_testUserRegistration.ic" NAME="AuthServiceTest.testUserRegistration Coverage Results" MODIFIED="1669044018294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.epitech.cryptoProject.services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/T_WEB_700_LIL_3$AuthControllerTest.ic" NAME="AuthControllerTest Coverage Results" MODIFIED="1669036577067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.epitech.cryptoProject.controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/T_WEB_700_LIL_3$ArticleControllerTest.ic" NAME="ArticleControllerTest Coverage Results" MODIFIED="1670841798350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.epitech.cryptoProject.controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/T_WEB_700_LIL_3$com_epitech_cryptoProject_in_cryptoProject.ic" NAME="com.epitech.cryptoProject in cryptoProject Coverage Results" MODIFIED="1673360854160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.epitech.cryptoProject.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/T_WEB_700_LIL_3$UserServiceTest_testDeleteUsersErrorIfIdEmpty.ic" NAME="UserServiceTest.testDeleteUsersErrorIfIdEmpty Coverage Results" MODIFIED="1673358721020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.epitech.cryptoProject.services.*</FILTER>
+    </SUITE>
+  </component>
+</project>

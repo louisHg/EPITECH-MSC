@@ -1,0 +1,14 @@
+.tenBest{
+    border: 1px solid black;
+    width:fit-content;
+    height: 310px;
+    overflow-y: auto;
+}
+
+.coinList{
+    border : 1px solid lightgrey
+}
+
+.TableHead{
+    color : navy
+}

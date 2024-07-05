@@ -1,0 +1,70 @@
+{
+    "client":{
+        "host":""
+    },
+    "server":{
+        "current_time":"",
+        "services":[{
+            "name":"meteo",
+            "widget":[{
+                "name":"city_weather",
+                "description":"Display temperature / humidity / Galeforce",
+                "params":[{
+                    "name": "city",
+                    "type" : "string"
+                }]
+            }]
+        },{
+            "name": "cryptocurrency",
+            "widgets":[{
+                "name":"crypto_chart",
+                "description":"Display infos about the 9 biggest currencies + the chosen one",
+                "params":[{
+                    "name":"coinranking crypto uuid",
+                    "type":"string"
+                }]
+            },{
+                "name":"crypto_graph",
+                "description":"Display price evolution of the chosen cryptocurrency",
+                "params":[{
+                    "name":"coinranking crypto uuid",
+                    "type":"string"
+                }]
+            }]  
+        },{
+            "name": "reddit",
+            "widgets":[{
+                "name":"subreddit_threads",
+                "description":"Display frontpage of the chosen subreddit",
+                "params":[{
+                    "name":"subreddit",
+                    "type":"string"
+                }]
+            },{
+                "name":"crypto_graph",
+                "description":"Display the banner / current users / totals subscribers of the chosen subreddit",
+                "params":[{
+                    "name":"subreddit",
+                    "type":"string"
+                }]
+            }]  
+        },{
+            "name": "youtube",
+            "widgets":[{
+                "name":"youtube_channel",
+                "description":"Display the 20 last youtube video of a channel",
+                "params":[{
+                    "name":" channel url (https://www.youtube.com/channel/[channel_id]",
+                    "type":"string"
+                }]
+            },{
+                "name":"youtube_search",
+                "description":"Display the 20 last result of the word query chosen by the user",
+                "params":[{
+                    "name":"query_choice",
+                    "type":"string"
+                }]
+            }]  
+        }]
+    }
+}

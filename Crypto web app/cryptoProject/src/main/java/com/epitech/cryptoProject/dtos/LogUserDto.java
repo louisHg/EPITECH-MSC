@@ -1,0 +1,15 @@
+package com.epitech.cryptoProject.dtos;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class LogUserDto {
+  private String email;
+  private String password;
+}
