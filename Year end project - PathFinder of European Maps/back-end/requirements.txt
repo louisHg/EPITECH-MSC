@@ -1,0 +1,7 @@
+psycopg2-binary
+rasterio
+scikit-image
+matplotlib
+earthpy
+frozendict
+pyproj

@@ -1,0 +1,40 @@
+---
+tags:
+  - User
+parameters:
+  - name: id
+    in: path
+    type: integer
+    required: true
+    description: The ID of the user.
+  - name: body
+    in: body
+    required: true
+    schema:
+      type: object
+      properties:
+        first_name:
+          type: string
+          description: The updated first name of the user.
+        last_name:
+          type: string
+          description: The updated last name of the user.
+        gender:
+          type: string
+          description: The updated gender of the user.
+        email:
+          type: string
+          description: The updated email of the user.
+        password:
+          type: string
+          description: The updated password of the user.
+        phone:
+          type: string
+          description: The updated phone number of the user.
+responses:
+  201:
+    description: User updated successfully.
+  400:
+    description: Something went wrong.
+  500:
+    description: Internal Server Error.

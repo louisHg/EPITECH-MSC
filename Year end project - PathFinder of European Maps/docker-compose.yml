@@ -1,0 +1,53 @@
+version: "3"
+services:
+  db:
+    container_name: postgres_db
+    image: postgres
+    restart: always
+    ports:
+      - 8000:5432
+    environment:
+      POSTGRES_PASSWORD: user
+      POSTGRES_USER: user
+      POSTGRES_DB: Trackfinder
+
+    volumes:
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql # Montez le fichier SQL dans le répertoire d'initialisation
+
+
+  # python_worker:
+  #   container_name: python_worker
+  #   build:
+  #     context: ./back-end
+  #   environment:
+  #     DB_PASSWORD: user
+  #     DB_USER: user
+  #     DB_PORT: 5432
+  #     DB_NAME: Trackfinder
+  #     DB_HOST: db
+  #   depends_on:
+  #     - db
+  #   volumes:
+  #     - ./back-end/3d_plots:/3d_plots
+  #     - ./back-end/2d_plots:/2d_plots
+  #     - ./back-end/chunks:/chunks
+
+  # adminer:
+  #   image: adminer
+  #   restart: always
+  #   depends_on:
+  #     - db
+  #   ports:
+  #     - 8080:8080
+
+  # front-end:
+  #   build:
+  #     context: ./front-end
+  #     target: runner
+  #   volumes:
+  #     - .:/app
+  #   command: npm run dev
+  #   ports:
+  #     - "3000:3000"
+  #   environment:
+  #     NODE_ENV: development
