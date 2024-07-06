@@ -1,3 +1,3 @@
 # ANSIBLE DEPLOYEMENT
 
-HIE-COMMAIRCE is an symfony back for e-commerce.
+E-Commerce is an symfony back for e-commerce.

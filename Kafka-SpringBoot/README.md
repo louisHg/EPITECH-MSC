@@ -1,4 +1,4 @@
-# T-DAT-901-LIL_1
+# Kafka Spring boot project
 
 The projects consists of scrapping data to a CryptoWebSite.
 These data will be processing thanks to Kafka.

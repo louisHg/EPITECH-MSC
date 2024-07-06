@@ -1,4 +1,4 @@
-# T-DEV-600-LIL-6-1-redditech-maxence.marqui
+# Reddit App
 
 To launch the application in an emulator, first of all download, install and setup Android Studio and
 an image of the phone you'll be using.

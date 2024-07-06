@@ -1,0 +1,102 @@
+datasource db {
+  provider  = "postgresql"
+  url       = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id            String     @id @default(cuid())
+  name          String?
+  email         String?    @unique
+  emailVerified DateTime?
+  image         String?
+  password      String?
+  accounts      Account[]
+  hikings       Hiking[]   @relation("UserToHiking")
+  comments      Comment[]  @relation("UserToComment")
+  favorites     Favorite[] @relation("UserToFavorite")
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Difficulty {
+  id      Int      @id @default(autoincrement())
+  label   String
+  hikings Hiking[] @relation("DifficultyToHiking")
+}
+
+model Hiking {
+  id            String        @id @default(cuid())
+  userId        String?
+  user          User?         @relation("UserToHiking", fields: [userId], references: [id])
+  title         String
+  description   String        @db.VarChar(1000)
+  city          String
+  country       String
+  area          String
+  createdAt     DateTime      @default(now())
+  difficultyId  Int
+  difficulties  Difficulty    @relation("DifficultyToHiking", fields: [difficultyId], references: [id])
+  distance      Float?        @default(0.0)
+  bannerImg     String?
+  ratingAverage Float?        @default(0.0)
+  comments      Comment[]     @relation("HikingToComment")
+  favorites     Favorite[]    @relation("HikingToFavorite")
+  travelPoint   TravelPoint[] @relation("HikingToTravelPoint")
+
+  @@index([userId, difficultyId])
+}
+
+model TravelPoint {
+  id        Int    @id @default(autoincrement())
+  latitude  Float
+  longitude Float
+  hikingId  String
+  hiking    Hiking @relation("HikingToTravelPoint", fields: [hikingId], references: [id])
+  order     Int
+}
+
+model Favorite {
+  id       Int     @id @default(autoincrement())
+  userId   String
+  user     User?   @relation("UserToFavorite", fields: [userId], references: [id])
+  hikingId String
+  hiking   Hiking? @relation("HikingToFavorite", fields: [hikingId], references: [id])
+
+  @@index([userId, hikingId])
+}
+
+model Comment {
+  id        Int      @id @default(autoincrement())
+  userId    String?
+  user      User?    @relation("UserToComment", fields: [userId], references: [id])
+  hikingId  String
+  hiking    Hiking   @relation("HikingToComment", fields: [hikingId], references: [id])
+  title     String
+  content   String
+  createdAt DateTime @default(now())
+  rating    Int
+
+  @@index([userId, hikingId])
+}

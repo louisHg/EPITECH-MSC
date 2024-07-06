@@ -1,0 +1,30 @@
+version: "3.1"
+services:
+  postgres:
+    image: postgres:latest
+    container_name: trackfinderDb
+    environment:
+      POSTGRES_DB: esp-next-full-stack
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+    ports:
+      - "8889:5432"
+    restart: always
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+  next:
+    container_name: nextjs
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    env_file:
+      - .env.docker
+    ports:
+      - 3000:3000
+    environment:
+      DB_HOST: postgres

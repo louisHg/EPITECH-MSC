@@ -1,6 +1,4 @@
-# T-WEB-501-LIL-5-1-jobboard-louis.deshayes
-
-Jobboard is a job offer website
+# Jobboard is a job offer website
 
 ## Installation
 

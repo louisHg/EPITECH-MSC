@@ -1,4 +1,4 @@
-# L'apprentissage par renforcement
+# L'apprentissage par renforcement - Pathfinding AI
 
 ## Concept clés :
 

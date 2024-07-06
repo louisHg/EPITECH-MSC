@@ -1,3 +1,5 @@
+# Crypto Spring Application 
+
 # Nécessite Gradle 7.3.1 et java 17 pour fonctionner.
 ## Dans un terminal divisé :
 ### Sur le premier terminal

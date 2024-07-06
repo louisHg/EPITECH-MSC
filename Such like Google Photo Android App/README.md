@@ -1,4 +1,5 @@
-# PICTSMANAGER
+# PICTSMANAGER - Application use to handle pictures
+
 ## TAKE, STORE, TAG AND HANDLE PICTURES
 
 # Rules Firebase
