@@ -77,7 +77,7 @@ The architecture ensures scalability, making Kafka a robust solution for handlin
 For example, is there any problem like the spring consummer which his crashing, kafka will take the relay and another time push it into the db. Plus kafka store the amount of data even if there's an issues, that's why there's huge scalability.
 
 Here's a little schema that represent the actions of producing and listenning ...
-<img width="1173" alt="fabric-patterns-screenshot" src="https://github.com/EpitechMscProPromo2024/T-DAT-901-LIL_1/blob/main/kafkaSystem.png?raw=true">
+<img width="1173" alt="fabric-patterns-screenshot" src="https://github.com/louisHg/EPITECH-MSC/blob/main/Kafka-SpringBoot/kafkaSystem.png?raw=true">
 
 ### Code-architecture
 
