@@ -2,6 +2,10 @@
 <br/>
 <p align="center">
 Some <a href="http://www.epitech.eu">Epitech</a> school projects made in 2021/2024.
+<br/>
+These projects are school projects, these projects are made in <strong>8 days of work</strong>, except the year-end projects which are made <strong>over 1 year</strong>.
+<br/>
+In addition, during my internship, I worked with Java Spring Boot and VueJS.
 <br/><br/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Epitech.png/1598px-Epitech.png" width="250">
 </p>
@@ -10,46 +14,46 @@ Some <a href="http://www.epitech.eu">Epitech</a> school projects made in 2021/20
 <a name="top"></a>
 
 ## Table of Contents 
-All the table is order by the latest date (descending order)
+All the table is ordered by the latest date (descending order).
 <br/>
-To access to the projects, let's look at the folder in this repository, the projects names in table of contents refers to the folders name.
+To access the projects, look at the folders in this repository. The project names in the table of contents refer to the folder names.
 <br/>
-The contents in the table of contents is my bests projects during my studies
+The contents in the table of contents are my best projects during my studies from the newest to the oldest.
 
-- Year end project - second versions : **NextJS projects**
-    - Trackfinder is a web app with for goal to give the possibility to share and display some hiring.
-    - The year end project has for objective to build a custom projets, from the creation to the deployement : ref to 
+- Year-end project - second version: **NextJS projects**
+    - Trackfinder is a web app with the goal of giving the possibility to share and display some hiring opportunities.
+    - The year-end project aims to build a custom project, from creation to deployment: refer to 
     [trackfinder-neon.vercel.app](https://trackfinder-neon.vercel.app/)
-    - This seconds versions is due to the complexity to integrate a custom pathfinding make in Python
-- Year end project - PathFinder of European Maps : **Python, NextJS**
-    - This first versions is not fully make in NextJS, All the Algorithm of pathfinding and the API are make in Python
-    - The algorithms used some points stored in PostgreSQL database, theses points represents 50 square meters points of the Europeean maps. All theses nodes are used to find the best road 
-    - The API is make in Flask
-- Kafka projects : **Spring boot, Kafka, PostgreSQL, Selenium**
-    - A web application which used Selenium to scrapping some Crypto Data
-    - This crypto are send to a broker Kafka and interpreted to be saved in database
-    - This crypto data picked are now duplicated on a React web app
-    - All the work are launchable from a **docker-compose file** excepts the from which is run with node engine
-- Pathfinding AI : **Python**
-    - Projects to learn how to make AI(artificial intelligence) by reiforcement, the idea to train a model of intelligence. The model will be trainning during a certain time. When he did a good actions (example, he go to the good direction), he gets a bonus (+ 1 reward). When he did a wrong actions (For instance, he walks aways), we gave him a penalties and a malus
+    - This second version is due to the complexity of integrating a custom pathfinding algorithm made in Python
+- Year-end project - PathFinder of European Maps: **Python, NextJS**
+    - This first version is not fully made in NextJS. All the pathfinding algorithms and the API are made in Python.
+    - The algorithms use some points stored in a PostgreSQL database. These points represent 50 square meters of the European maps. All these nodes are used to find the best route.
+    - The API is made in Flask.
+- Kafka projects: **Spring Boot, Kafka, PostgreSQL, Selenium**
+    - A web application that uses Selenium to scrape some Crypto Data.
+    - This crypto data is sent to a Kafka broker and processed to be saved in a database.
+    - This crypto data is then displayed on a React web app.
+    - All the work is launchable from a **docker-compose file** except the frontend, which is run with the Node engine.
+- Pathfinding AI: **Python**
+    - A project to learn how to create AI (artificial intelligence) using reinforcement learning. The idea is to train an intelligence model. The model will be trained over a certain period. When it performs a good action (e.g., it goes in the right direction), it gets a bonus (+1 reward). When it performs a wrong action (e.g., it walks away), it gets a penalty and a malus.
 - Predict lung pneumonia with AI: **Python**
-    - An artificial intelligence will be train to detects if a scanning of a lung is sick or not. 
-- Such like Google Photo Android: **Java, Kotlin**
-    - Android application made to compress his pictures from a percentage given. These pictures compress or not should saved or edit in a interface, plus we can share to a friend or a group of friends.
-- Time Manager: **Phoenix elixir, VueJS**
-    - Web application used to handling a community of persons, the idea is to saved "how much time we've working today". As example, imagine when we're going to work we launch a chrono and we leave it we click off again. 
-    The differences between it will calculate how much time a salary has working
-    - A system of charts is used to display some statistics about the salarie's working time.
-- Job offer web site : **NodeJS Express**
-    - This is my first projects make during my EPITECH years, it's a job offer website. We can publish some job offer if we're an employers, and applies to it if we're a candidate
-- End to end pathfinding solution: **Python**
-    - A pathfing solutions use to give the best path between 2 points. 
-    - More than foot trips, the solution gives alternative with subway, trainline, bus etc... based on google API
-- Discord like: **Express, ReactJS, Web socket**
-    - Live web chat like Discord app. The web socket is used to update quickly the render (when we got a new message display it as well)
+    - An artificial intelligence will be trained to detect if a lung scan is sick or not.
+- Google Photos-like Android app: **Java, Kotlin**
+    - An Android application made to compress pictures by a given percentage. These pictures, whether compressed or not, can be saved or edited in an interface, and shared with friends or a group of friends.
+- Time Manager: **Phoenix Elixir, VueJS**
+    - A web application used to manage a community of people. The idea is to save "how much time we've worked today." For example, when we start working, we launch a timer, and when we stop, we click it off again. 
+    - The difference in time is calculated to determine how much time a person has worked.
+    - A system of charts is used to display statistics about the employees' working time.
+- End-to-end pathfinding solution: **Python**
+    - A pathfinding solution used to give the best path between two points.
+    - More than just walking trips, the solution provides alternatives with subway, train, bus, etc., based on Google API.
+- Discord-like app: **Express, ReactJS, WebSocket**
+    - A live web chat similar to the Discord app. WebSocket is used to quickly update the interface (e.g., when a new message is received, it is displayed immediately).
 - Crypto web app: **ReactJS, Spring Boot**
-    - Spring boot will grab some CryptoData from public API, saved it a database. This data are shared throw the ReactJS web app.
-    - **A second crypto application using Spring boot is available**
-    - **And 1 more in Angular and Express...**
-- CI CD pipeline: **Ansible, Docker**
-    - More like a POC(Proof Of Concepts), this projects is used to deploy an application and a pipeline gitlab is used to verify if the test passed. If it's the fact it triggers the deployement
+    - Spring Boot will grab some Crypto Data from a public API and save it in a database. This data is shared through the ReactJS web app.
+    - **A second crypto application using Spring Boot is available.**
+    - **And one more in Angular and Express...**
+- CI/CD pipeline: **Ansible, Docker**
+    - More like a POC (Proof Of Concept), this project is used to deploy an application, and a GitLab pipeline is used to verify if the tests passed. If they pass, it triggers the deployment.
+- Job offer website: **NodeJS Express**
+    - This is my first project made during my EPITECH years. It's a job offer website. Employers can publish job offers, and candidates can apply to them.
