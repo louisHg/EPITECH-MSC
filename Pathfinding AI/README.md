@@ -1,4 +1,4 @@
-# L'apprentissage par renforcement - Pathfinding AI
+# L'apprentissage par renforcement
 
 ## Concept clés :
 
@@ -25,9 +25,17 @@ L'**état** est une représentation de la situation actuelle de l'environnement.
 
 ## Algorithmes d'apprentissages
 
-### Q-Learning personalisé
+### Q-learning classique
 
-Le Q-learning est un algorithme d'apprentissage par renforcement utilisé pour trouver une politique optimale pour un problème donné, en apprenant quelle action entreprendre dans un état particulier pour maximiser une récompense cumulative.
+Le Q-learning classique est un algorithme d'apprentissage sans modèle s'appuyant sur une table éponyme qui représente la valeur (ou qualité) d'une action pour chaque état possible.
+A chaque étape l'agent choisit une action, observe la récompense obtenue puis ajuste la valeur respective dans la Q-table.
+L'objectif final est de maximiser la récompense au fûr et à mesure des épisodes successifs en lui faisant apprendre une politique optimale via l'entrainement.
+
+### A star Q-learning
+
+Le A* Q learning est une version modifiée du Q-learning classique, utilisant lui aussi une Q-table, mais en incorporant une logique proche du A* à l'entrainement.
+Dans cette version, on calcul dans un premier temps pour chaque node du graphique sa distance avec les 4 points spéciaux pouvant être l'hôtel ou le passager.
+A partir de cette information on attribue une récompense négative si l'action augmentera la distance minimale pour rejoindre l'objectif
 
 ### Brute force
 
